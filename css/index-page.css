@@ -51,11 +51,14 @@
         height: 91rem;
     }
 
+    .lien-accueil{
+        position: relative;
+        left: -11%;
+    }
+
     .fa-arrow-left{
         font-size: 1.5rem;
         color: #353535;
-        position: relative;
-        left: -13%;
     }
     
     .header__titre{
