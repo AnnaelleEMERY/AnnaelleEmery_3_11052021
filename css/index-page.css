@@ -23,9 +23,9 @@
         margin: 0;
     }
 
-    h3{
+    .h3__menus{
         font-family: 'Roboto', sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin: 0;
         font-weight: 400;
     }
@@ -36,10 +36,6 @@
         margin: 0;
     }
 
-    .boite-individuelle__description-et-prix__prix{
-        font-weight: 400;
-    }
-
     header{
         display: flex;
         flex-direction: row;
@@ -48,6 +44,11 @@
         box-shadow: 0px 0px 5px rgb(121, 121, 121);
         position: relative;
         z-index: 1;
+    }
+
+    .container{
+        background-color: #F6F6F6;
+        height: 91rem;
     }
 
     .fa-arrow-left{
@@ -120,7 +121,8 @@
 
 
     .Menu__entrees-plats-desserts{
-        width: 90%;
+        width: 93%;
+        margin-bottom: 1rem;
     }
 
     .Menu__entrees-plats-desserts__titre-et-souligne{
@@ -143,10 +145,13 @@
         flex-direction: row;
         border-radius: 20px;
         background-color: white;
-        height: 4.5rem;
+        height: 4.6rem;
     }
 
     .boite-individuelle__colonne-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         width: 80%;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
@@ -164,12 +169,15 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .boite-individuelle__description-et-prix__description{
         flex-wrap: nowrap;
         text-overflow: ellipsis;
     }
 
-    .boite-individuelle__description-et-prix__description{
-
+    .boite-individuelle__description-et-prix__prix{
+        font-weight: 400;
     }
 
     .boite-individuelle__bouton-selectionner{
@@ -211,6 +219,8 @@
         margin: 0;
         border: 1px solid #353535;
         color: white;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
     }
 
     .footer__titre{
