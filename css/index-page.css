@@ -1,0 +1,207 @@
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+    body{
+        width: 100%;
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1{
+        font-family: 'Shrikhand', cursive;
+    }
+
+    .h1__Menu{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .h2__thin-uppercase{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 5px rgb(121, 121, 121);
+        position: relative;
+        z-index: 1;
+    }
+
+    .fa-arrow-left{
+        font-size: 1.5rem;
+        color: #353535;
+        position: relative;
+        left: -13%;
+    }
+    
+    .header__titre{
+        margin: 0.5rem;
+    }
+
+    .sous-header__banniere-menu{
+        width: 100%;
+        margin: 0;
+    }
+
+    .image-banniere{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Menu{
+        background-color: #F6F6F6;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        position: relative;
+        top: -3.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+
+    .Menu__titre-et-coeur{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Menu__titre-et-coeur .fas{
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: #4F4F4F;
+        margin-right: 1rem;
+    }
+
+    .Menu__titre-et-coeur .fas:hover{
+        font-weight: 900;
+        color: rgb(147,86,220);
+        display: block;
+        background: -webkit-linear-gradient(#9356dc,#ff79da);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+
+    .Menu__entrees-plats-desserts{
+        width: 90%;
+        border: 1px solid pink;
+    }
+
+    .Menu__entrees-plats-desserts__titre-et-souligne{
+        border: 1px solid blue;
+    }
+
+    .Menu__les-boites{
+        border: 1px solid blue;
+    }
+
+    .Menu__les-boites__boite-individuelle{
+        border: 1px solid orange;
+    }
+
+    .boite-individuelle__colonne-description{
+        border: 1px solid red;
+    }
+
+    .boite-individuelle__bouton-selectionner{
+        border: 1px solid red;
+    }
+
+    .boite-individuelle__titre{
+        border: 1px solid blue;
+    }
+
+    .boite-individuelle__description-et-prix{
+        border: 1px solid blue;
+    }
+
+    .bouton__rose__Menus{
+        font-size: 1.2rem;
+        color: white;
+        background: rgb(255,121,218);
+        background: linear-gradient(176deg, rgba(255,121,218,1) 5%, rgba(147,86,220,1) 100%);
+        border: none;
+        padding: 1rem 3rem 1rem 3rem;
+        border-radius: 60px;
+        box-shadow: 0px 5px 20px rgb(168, 168, 168);
+    }
+
+    .bouton__rose__Menus:hover{
+        cursor: pointer;
+    }
+
+
+
+
+
+    footer{
+        background-color: #353535;
+        margin: 0;
+        border: 1px solid #353535;
+        color: white;
+    }
+
+    .footer__titre{
+        padding-left: 1.5rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    .footer__ul{
+        padding: 0 0 0 1.5rem;
+        height: 7.5rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .footer__ul__liste{
+        width: max-content;
+    }
+
+    .footer__ul__liste:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .footer__ul__liste a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .fa-utensils{
+        margin-right: 1rem;
+    }
+
+    .fa-hands-helping{
+        font-size: 0.8rem;
+        margin-right: 0.8rem;
+    }
+} /* Téléphone */

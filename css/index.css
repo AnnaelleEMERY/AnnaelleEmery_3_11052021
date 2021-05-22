@@ -17,6 +17,11 @@
         font-size: 1.7rem;
     }
 
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+    }
+
     p{
         font-weight: 200;
         font-size: 1.2rem;
@@ -251,7 +256,6 @@
     }
 
     .container-menus__description__titre{
-        font-size: 1.2rem;
         margin: 0 0 0.2rem 0;
     }
 
