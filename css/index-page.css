@@ -17,19 +17,27 @@
 
     .h2__thin-uppercase{
         font-family: 'Roboto', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 300;
         text-transform: uppercase;
+        margin: 0;
     }
 
     h3{
         font-family: 'Roboto', sans-serif;
         font-size: 1.2rem;
+        margin: 0;
+        font-weight: 400;
     }
 
     p{
         font-weight: 200;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .boite-individuelle__description-et-prix__prix{
+        font-weight: 400;
     }
 
     header{
@@ -63,10 +71,13 @@
         object-fit: cover;
     }
 
+
+
+
     .Menu{
         background-color: #F6F6F6;
         padding-top: 2rem;
-        padding-bottom: 4rem;
+        padding-bottom: 3rem;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         position: relative;
@@ -80,6 +91,7 @@
 
     .Menu__titre-et-coeur{
         width: 90%;
+        margin-bottom: 2rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -104,37 +116,76 @@
         cursor: pointer;
     }
 
+
+
+
     .Menu__entrees-plats-desserts{
         width: 90%;
-        border: 1px solid pink;
     }
 
     .Menu__entrees-plats-desserts__titre-et-souligne{
-        border: 1px solid blue;
+        border-bottom: 3px solid #99E2D0;
+        margin: 0;
+        width: 3.2rem;
     }
 
     .Menu__les-boites{
-        border: 1px solid blue;
+        height: 15.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0.8rem;
+        margin-bottom: 3rem;
     }
 
     .Menu__les-boites__boite-individuelle{
-        border: 1px solid orange;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        background-color: white;
+        height: 4.5rem;
     }
 
     .boite-individuelle__colonne-description{
-        border: 1px solid red;
+        width: 80%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding: 0.5rem;
     }
-
-    .boite-individuelle__bouton-selectionner{
-        border: 1px solid red;
-    }
-
+    
     .boite-individuelle__titre{
-        border: 1px solid blue;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .boite-individuelle__description-et-prix{
-        border: 1px solid blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .boite-individuelle__description-et-prix__description{
+
+    }
+
+    .boite-individuelle__bouton-selectionner{
+        background-color: #99E2D0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .fa-check-circle{
+        color: white;
+        font-size: 1.5rem;
     }
 
     .bouton__rose__Menus{
@@ -151,7 +202,6 @@
     .bouton__rose__Menus:hover{
         cursor: pointer;
     }
-
 
 
 
