@@ -46,24 +46,26 @@
 
     .container-under-header{
         background-color: #F6F6F6;
+        .localisation{
+            background-color: #EAEAEA;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: baseline;
+            font-weight: 600;
+            color: #363636;
+        }
     }
 
-    .container-under-header__localisation{
-        background-color: #EAEAEA;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
-        font-weight: 600;
-        color: #363636;
-    }
+
+
 
     .fa-map-marker-alt{
         margin-right: 1rem;
         font-size: 1.15rem;
     }
 
-    .container-under-header__reservez{
+    .reservez{
         display: flex;
         flex-direction: column;
         justify-content: center;
