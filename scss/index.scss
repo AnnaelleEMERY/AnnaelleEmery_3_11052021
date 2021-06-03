@@ -1,157 +1,155 @@
+$localisation-text:#363636;
+$localisation-background: #EAEAEA;
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$background: #F6F6F6;
+$icon: #7E7E7E;
+$button-box-shadox:#a8a8a8;
 
+body{
+    width: 100%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+p{
+    font-weight: 200;
+    font-size: 1.2rem;
+}
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
-    body{
-        width: 100%;
-        margin: auto;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    h1{
-        font-family: 'Shrikhand', cursive;
-    }
-
-    h2{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.7rem;
-    }
-
-    h3{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.2rem;
-        font-weight: 400;
-    }
-
-    p{
-        font-weight: 200;
-        font-size: 1.2rem;
-    }
-
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        box-shadow: 0px 0px 5px rgb(121, 121, 121);
-        position: relative;
-        z-index: 1;
-    }
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgb(121, 121, 121);
+    position: relative;
+    z-index: 1;
+}
 
 .header__titre{
         margin: 0.5rem;
     }
 
 
-
-
-    .container-under-header{
-        background-color: #F6F6F6;
-        .localisation{
-            background-color: #EAEAEA;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: baseline;
-            font-weight: 600;
-            color: #363636;
+.container-under-header{
+    background-color: $background;
+    .localisation{
+        background-color: $localisation-background;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        font-weight: 600;
+        color: $localisation-text;
+        .fa-map-marker-alt{
+            margin-right: 1rem;
+            font-size: 1.15rem;
         }
     }
-
-
-
-
-    .fa-map-marker-alt{
-        margin-right: 1rem;
-        font-size: 1.15rem;
-    }
-
-    .reservez{
+    .reserve{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         padding: 2.5rem 0 3.5rem 0;
-    }
+        .title{
+            margin: 0 3rem 1rem 3rem;
+        }
+        .text-discover{
+            margin: 0rem 1.5rem 1.5rem 1.5rem;
+        }
+    }    
+}
 
-    .container-under-header__titre{
-        text-align: center;
-        margin: 0 3rem 1rem 3rem;
+.button-primary{
+    border: none;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 60px;
+    box-shadow: 0px 5px 20px $button-box-shadox;
+    &--gradient{
+        background: $secondary;
+        background: linear-gradient(176deg, $secondary 5%, $primary 100%);
     }
-
-    .container-under-header__texte-decouvrez{
-        text-align: center;
-        margin: 0rem 1.5rem 1.5rem 1.5rem;
-    }
-
-    .bouton__rose{
+    .text{
         font-size: 1.2rem;
         color: white;
-        background: rgb(255,121,218);
-        background: linear-gradient(176deg, rgba(255,121,218,1) 5%, rgba(147,86,220,1) 100%);
-        border: none;
-        padding: 1rem 1.5rem 1rem 1.5rem;
-        border-radius: 60px;
-        box-shadow: 0px 5px 20px rgb(168, 168, 168);
     }
-
-    .bouton__rose:hover{
+    &.button-primary:hover{
         cursor: pointer;
+        background: $primary;
     }
+}
 
 
 
 
-    .container-menus-nav{
-        display: flex;
-        flex-direction: column;
-    }
 
-    .container-titre{
+
+.container-menu-nav{
+    display: flex;
+    flex-direction: column;
+    .title{
         padding: 1rem;
     }
-
-    .nav-trois-boutons{
+    .nav-three-buttons{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 18rem;
         margin-bottom: 3rem;
         margin-top: -1.5rem;
+        .button-and-number{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            .button-nav{
+                width: 85%;
+                height: 4.5rem;
+                color: #191919;
+                background-color: #F6F6F6;
+                border-radius: 20px;
+                border: none;
+                box-shadow: 0px 5px 10px rgb(219, 219, 219);
+                font-size: 1rem;
+                font-weight: 600;
+        
+                position: relative;
+                left: -0.8rem;
+            }
+            .button-nav:hover{
+                background-color: #F5EDFF;
+                cursor: pointer;
+            }
+        }
     }
-
-    .nav-trois-boutons__bouton-et-chiffre{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .bouton-nav{
-        width: 85%;
-        height: 4.5rem;
-        color: #191919;
-        background-color: #F6F6F6;
-        border-radius: 20px;
-        border: none;
-        box-shadow: 0px 5px 10px rgb(219, 219, 219);
-        font-size: 1rem;
-        font-weight: 600;
-
-        position: relative;
-        left: -0.8rem;
-    }
-
-    .bouton-nav:hover{
-        background-color: #F5EDFF;
-        cursor: pointer;
-    }
+}
 
     .bouton-nav__numero{
         font-family: 'Roboto', sans-serif;
         font-size: 1rem;
         font-weight: 300;
         color: white;
-        background-color: #9356DC;
+        background-color: $primary;
         padding: 0.25rem 0.55rem;
         border-radius: 50px;
         align-self: center;
@@ -167,7 +165,7 @@
         width: 100%;
     }
 
-    .bouton-nav .fas{
+    .button-nav .fas{
         color: #7E7E7E;
         font-size: 1.2rem;
         margin-right: 1.2rem;

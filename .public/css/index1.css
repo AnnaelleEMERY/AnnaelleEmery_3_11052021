@@ -1,31 +1,31 @@
 @charset "UTF-8";
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  body {
-    width: 100%;
-    margin: auto;
-    font-family: "Roboto", sans-serif;
-  }
-
-  h1 {
-    font-family: "Shrikhand", cursive;
-  }
-
-  h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.7rem;
-  }
-
-  h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
-
-  p {
-    font-weight: 200;
-    font-size: 1.2rem;
-  }
-
   header {
     display: flex;
     flex-direction: row;
@@ -51,55 +51,52 @@
     font-weight: 600;
     color: #363636;
   }
-
-  .fa-map-marker-alt {
+  .container-under-header .localisation .fa-map-marker-alt {
     margin-right: 1rem;
     font-size: 1.15rem;
   }
-
-  .reservez {
+  .container-under-header .reserve {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 2.5rem 0 3.5rem 0;
   }
-
-  .container-under-header__titre {
-    text-align: center;
+  .container-under-header .reserve .title {
     margin: 0 3rem 1rem 3rem;
   }
-
-  .container-under-header__texte-decouvrez {
-    text-align: center;
+  .container-under-header .reserve .text-discover {
     margin: 0rem 1.5rem 1.5rem 1.5rem;
   }
 
-  .bouton__rose {
-    font-size: 1.2rem;
-    color: white;
-    background: #ff79da;
-    background: linear-gradient(176deg, #ff79da 5%, #9356dc 100%);
+  .button-primary {
     border: none;
     padding: 1rem 1.5rem 1rem 1.5rem;
     border-radius: 60px;
     box-shadow: 0px 5px 20px #a8a8a8;
   }
-
-  .bouton__rose:hover {
+  .button-primary--gradient {
+    background: #FF79DA;
+    background: linear-gradient(176deg, #FF79DA 5%, #9356DC 100%);
+  }
+  .button-primary .text {
+    font-size: 1.2rem;
+    color: white;
+  }
+  .button-primary.button-primary:hover {
     cursor: pointer;
+    background: #9356DC;
   }
 
-  .container-menus-nav {
+  .container-menu-nav {
     display: flex;
     flex-direction: column;
   }
-
-  .container-titre {
+  .container-menu-nav .title {
     padding: 1rem;
   }
-
-  .nav-trois-boutons {
+  .container-menu-nav .nav-three-buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -107,15 +104,13 @@
     margin-bottom: 3rem;
     margin-top: -1.5rem;
   }
-
-  .nav-trois-boutons__bouton-et-chiffre {
+  .container-menu-nav .nav-three-buttons .button-and-number {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
   }
-
-  .bouton-nav {
+  .container-menu-nav .nav-three-buttons .button-and-number .button-nav {
     width: 85%;
     height: 4.5rem;
     color: #191919;
@@ -128,8 +123,7 @@
     position: relative;
     left: -0.8rem;
   }
-
-  .bouton-nav:hover {
+  .container-menu-nav .nav-three-buttons .button-and-number .button-nav:hover {
     background-color: #F5EDFF;
     cursor: pointer;
   }
@@ -153,7 +147,7 @@
     width: 100%;
   }
 
-  .bouton-nav .fas {
+  .button-nav .fas {
     color: #7E7E7E;
     font-size: 1.2rem;
     margin-right: 1.2rem;
