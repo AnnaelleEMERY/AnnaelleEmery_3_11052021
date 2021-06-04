@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width"> 
 	<title>OhMyFood</title>
-    <link rel="stylesheet" href=".public/css/index1.css" />
+    <link rel="stylesheet" href=".public/css/index.css" />
     <script src="https://kit.fontawesome.com/97fdc17419.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <h1 class="header__titre">ohmyfood</h1>
+        <h1 class="header__title">ohmyfood</h1>
     </header>
     <main class="container">
         <div class="container-under-header">
@@ -25,41 +25,41 @@
                 <h2 class="title">Réservez le menu qui vous convient</h1>
                 <p class="text-discover">Découvrez des restaurants d'exception, 
                 sélectionnés par nos soins.</p>
-                <a href="#titre_restaurants"><button class="button-primary button-primary--gradient"><span class="text">Explorer nos restaurants</span></button></a>
+                <a href="#titre_restaurants"><button class="button-primary button-primary--gradient"><span class="button-primary--text">Explorer nos restaurants</span></button></a>
             </div>
         </div>
         <div class="container-menu-nav">
             <h2 class="title">Fonctionnement</h2>
             <div class="nav-three-buttons">
-                <div class="button-and-number"><p class="number">1</p>
-                    <button class="button-nav" onclick="window.location.href = '#titre_restaurants';"><span class="button-nav__icon"><i class="fas fa-mobile-alt"></i><span class="button-nav__text">Choisissez un restaurant</span></span></button>
+                <div class="button-and-number"><p class="button-and-number__number">1</p>
+                    <button class="button-and-number__button-nav" onclick="window.location.href = '#titre_restaurants';"><span class="button-nav__icon"><i class="fas fa-mobile-alt"></i><span class="button-nav__text">Choisissez un restaurant</span></span></button>
                 </div>
                 
-                <div class="button-and-number"><p class="number">2</p>
-                    <button class="button-nav" onclick="window.location.href = '#titre_restaurants';"><span class="button-nav__icon"><i class="fas fa-list"></i><span class="button-nav__text">Composez votre menu</span></span></button>
+                <div class="button-and-number"><p class="button-and-number__number">2</p>
+                    <button class="button-and-number__button-nav" onclick="window.location.href = '#titre_restaurants';"><span class="button-nav__icon"><i class="fas fa-list"></i><span class="button-nav__text">Composez votre menu</span></span></button>
                 </div>
                 
-                <div class="button-and-number"><p class="number">3</p>
-                    <button class="button-nav" onclick="window.location.href = '#titre_restaurants';"><span class="button-nav__icon"><i class="fas fa-store"></i><span class="button-nav__text">Dégustez au restaurant</span></span></button>
+                <div class="button-and-number"><p class="button-and-number__number">3</p>
+                    <button class="button-and-number__button-nav" onclick="window.location.href = '#titre_restaurants';"><span class="button-nav__icon"><i class="fas fa-store"></i><span class="button-nav__text">Dégustez au restaurant</span></span></button>
                 </div>
             </div>
         </div>
         <div class="container-menus">
-            <h2 id="titre_restaurants">Restaurants</h2>
+            <h2 id="restaurant-title">Restaurants</h2>
             
-            <div class="container-menus__deux-menus">
+            <div class="two-menus-container">
 
                 <p class="bloc__nouveau">Nouveau</p>
-                <a class="lien-restaurants" href="page1.html">
-                    <div class="container-menus__boite-menu">
-                        <img class="images_boites" src="Maquettes_Ohmyfood/images/restaurants/La_palette_du_gout.jpg"  
+                <a class="restaurant-link" href="page1.html">
+                    <div class="box-menu">
+                        <img class="box-menu__images" src="Maquettes_Ohmyfood/images/restaurants/La_palette_du_gout.jpg"  
                         alt="La palette du goût"/>
-                        <div class="container-menus__description">
-                            <div class="container-menus__description__colonne1">
-                                <h3 class="container-menus__description__titre">La palette du goût</h3>
-                                <p class="container-menus__description__texte">Ménilmontant</p>
+                        <div class="box-menu__description">
+                            <div class="box-menu__description__colonne1">
+                                <h3 class="box-menu__description__titre">La palette du goût</h3>
+                                <p class="box-menu__description__texte">Ménilmontant</p>
                             </div>
-                            <div class="container-menus__description__colonne2">
+                            <div class="box-menu__description__colonne2">
                                 <i class="fas fa-heart"></i>
                             </div>
                         </div>
@@ -67,16 +67,16 @@
                 </a>
 
                 <p class="bloc__nouveau">Nouveau</p>
-                <a class="lien-restaurants" href="page2.html">
-                    <div class="container-menus__boite-menu">
-                        <img class="images_boites" src="Maquettes_Ohmyfood/images/restaurants/La_note_enchantee2.png"  
+                <a class="restaurant-link" href="page2.html">
+                    <div class="box-menu">
+                        <img class="box-menu__images" src="Maquettes_Ohmyfood/images/restaurants/La_note_enchantee2.png"  
                         alt="La note enchantée"/>
-                        <div class="container-menus__description">
-                            <div class="container-menus__description__colonne1">
-                                <h3 class="container-menus__description__titre">La note enchantée</h3>
-                                <p class="container-menus__description__texte">Charonne</p>
+                        <div class="box-menu__description">
+                            <div class="box-menu__description__colonne1">
+                                <h3 class="box-menu__description__titre">La note enchantée</h3>
+                                <p class="box-menu__description__texte">Charonne</p>
                             </div>
-                            <div class="container-menus__description__colonne2">
+                            <div class="box-menu__description__colonne2">
                                 <i class="fas fa-heart"></i>
                             </div>
                         </div>
@@ -84,36 +84,36 @@
                 </a>
             </div>
             
-            <div class="container-menus__deux-menus">
-            <p class="bloc__nouveau bloc_nouveau_none">Nouveau</p> 
+            <div class="two-menus-container">
+            <p class="bloc__nouveau bloc__nouveau--none">Nouveau</p> 
 
-                <a class="lien-restaurants" href="page3.html">
-                    <div class="container-menus__boite-menu boite-menu-nouveau-none">
-                        <img class="images_boites" src="Maquettes_Ohmyfood/images/restaurants/A_la_française.jpg"  
+                <a class="restaurant-link" href="page3.html">
+                    <div class="box-menu box-menu-nouveau-none">
+                        <img class="box-menu__images" src="Maquettes_Ohmyfood/images/restaurants/A_la_française.jpg"  
                         alt="À la française"/>
-                        <div class="container-menus__description">
-                            <div class="container-menus__description__colonne1">
-                                <h3 class="container-menus__description__titre">À la française</h3>
-                                <p class="container-menus__description__texte">Cité Rouge</p>
+                        <div class="box-menu__description">
+                            <div class="box-menu__description__colonne1">
+                                <h3 class="box-menu__description__titre">À la française</h3>
+                                <p class="box-menu__description__texte">Cité Rouge</p>
                             </div>
-                            <div class="container-menus__description__colonne2">
+                            <div class="box-menu__description__colonne2">
                                 <i class="fas fa-heart"></i>
                             </div>
                         </div>
                     </div>
                 </a>
 
-                <p class="bloc__nouveau bloc_nouveau_none">Nouveau</p>
-                <a class="lien-restaurants" href="page4.html">
-                    <div class="container-menus__boite-menu boite-menu-nouveau-none">
-                        <img class="images_boites" src="Maquettes_Ohmyfood/images/restaurants/Le_délice_des_sens.jpg"  
+                <p class="bloc__nouveau bloc__nouveau--none">Nouveau</p>
+                <a class="restaurant-link" href="page4.html">
+                    <div class="box-menu box-menu-nouveau-none">
+                        <img class="box-menu__images" src="Maquettes_Ohmyfood/images/restaurants/Le_délice_des_sens.jpg"  
                         alt="Le délice des sens"/>
-                        <div class="container-menus__description">
-                            <div class="container-menus__description__colonne1">
-                                <h3 class="container-menus__description__titre">Le délice des sens</h3>
-                                <p class="container-menus__description__texte">Folie-Méricourt</p>
+                        <div class="box-menu__description">
+                            <div class="box-menu__description__colonne1">
+                                <h3 class="box-menu__description__titre">Le délice des sens</h3>
+                                <p class="box-menu__description__texte">Folie-Méricourt</p>
                             </div>
-                            <div class="container-menus__description__colonne2">
+                            <div class="box-menu__description__colonne2">
                                 <i class="fas fa-heart"></i>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
             </div>
         </div>
         <footer>
-            <h1 class="footer__titre">ohmyfood</h1>
+            <h1 class="footer__title">ohmyfood</h1>
                 <ul class="footer__ul">
                     <li class="footer__ul__liste"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
                     <li class="footer__ul__liste"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
