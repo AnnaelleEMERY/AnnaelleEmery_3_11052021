@@ -1,0 +1,251 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.h1__Menu {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.h2__thin-uppercase {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.h3__menus {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px #797979;
+    position: relative;
+    z-index: 1;
+  }
+  header .header__title {
+    margin: 0.5rem;
+  }
+  header .home-link {
+    position: relative;
+    left: -11%;
+  }
+  header .home-link .fa-arrow-left {
+    font-size: 1.5rem;
+    color: #353535;
+  }
+
+  .header__title {
+    margin: 0.5rem;
+  }
+
+  .container {
+    background-color: #F6F6F6;
+    height: 91rem;
+  }
+  .container .under-header {
+    width: 100%;
+    margin: 0;
+  }
+  .container .under-header__banner-menu {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .Menu {
+    background-color: #F6F6F6;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    top: -3.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
+
+  .Menu__titre-et-coeur {
+    width: 90%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Menu__titre-et-coeur .fas {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #4F4F4F;
+    margin-right: 1rem;
+  }
+
+  .Menu__titre-et-coeur .fas:hover {
+    font-weight: 900;
+    color: #9356dc;
+    display: block;
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+
+  .Menu__entrees-plats-desserts {
+    width: 93%;
+    margin-bottom: 1rem;
+  }
+
+  .Menu__entrees-plats-desserts__titre-et-souligne {
+    border-bottom: 3px solid #99E2D0;
+    margin: 0;
+    width: 3.2rem;
+  }
+
+  .Menu__les-boites {
+    height: 15.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .Menu__les-boites__boite-individuelle {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: white;
+    height: 4.6rem;
+  }
+
+  .boite-individuelle__colonne-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0.5rem;
+  }
+
+  .boite-individuelle__titre {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .boite-individuelle__description-et-prix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .boite-individuelle__description-et-prix__description {
+    flex-wrap: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .boite-individuelle__description-et-prix__prix {
+    font-weight: 400;
+  }
+
+  .boite-individuelle__bouton-selectionner {
+    background-color: #99E2D0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .fa-check-circle {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .bouton__rose__Menus {
+    font-size: 1.2rem;
+    color: white;
+    background: #ff79da;
+    background: linear-gradient(176deg, #ff79da 5%, #9356dc 100%);
+    border: none;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 60px;
+    box-shadow: 0px 5px 20px #a8a8a8;
+  }
+
+  .bouton__rose__Menus:hover {
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: #353535;
+    margin: 0;
+    border: 1px solid #353535;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  footer .footer__title {
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  footer .footer__ul {
+    padding: 0 0 0 1.5rem;
+    height: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer .footer__ul__liste {
+    width: max-content;
+  }
+  footer .footer__ul__liste a {
+    color: white;
+    text-decoration: none;
+  }
+  footer .footer__ul__liste:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  footer .footer__ul__liste .fa-utensils {
+    margin-right: 1rem;
+  }
+  footer .footer__ul__liste .fa-hands-helping {
+    font-size: 0.8rem;
+    margin-right: 0.8rem;
+  }
+}
+/* Téléphone */
+
+/*# sourceMappingURL=index-pages.css.map */
