@@ -28,6 +28,9 @@ h1{
     font-size: 1.1rem;
     margin: 0;
     font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: ruby;
 }
 
 p{
@@ -115,6 +118,7 @@ p{
             &__title-and-underline{
                 border-bottom: 3px solid $tertiary;
                 margin: 0;
+                padding-bottom: 0.2rem;
                 width: 3.2rem;
             }
         }
@@ -132,16 +136,16 @@ p{
                 background-color: white;
                 height: 4.6rem;
                 &__title{
-                    display: flex;
-                    flex-direction: row;
-                    overflow: hidden;
                     text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: ruby;
+                    padding-right: 3.5rem;
                 }
                 &__description-column{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    width: 80%;
+                    width: 76%;
                     border-top-left-radius: 20px;
                     border-bottom-left-radius: 20px;
                     padding: 0.5rem;
@@ -150,9 +154,12 @@ p{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    padding-right: 1rem;
                     &__description{
-                        flex-wrap: nowrap;
                         text-overflow: ellipsis;
+                        overflow: hidden;
+                        display: ruby;
+                        padding-right: 1rem;
                     }
                     &__price{
                         font-weight: 400;
