@@ -46,10 +46,9 @@ header{
         margin: 0.5rem;
 }
 
-
 .container-under-header{
     background-color: $background;
-    .localisation{
+    &__localisation{
         background-color: $localisation-background;
         display: flex;
         flex-direction: row;
@@ -62,17 +61,17 @@ header{
             font-size: 1.15rem;
         }
     }
-    .reserve{
+    &__reserve{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         padding: 2.5rem 0 3.5rem 0;
-        .title{
+        &__title{
             margin: 0 3rem 1rem 3rem;
         }
-        .text-discover{
+        &__text-discover{
             margin: 0rem 1.5rem 1.5rem 1.5rem;
         }
     }    
@@ -91,7 +90,7 @@ header{
         font-size: 1.2rem;
         color: white;
     }
-    &.button-primary:hover{
+    &:hover{
         cursor: pointer;
         background: $primary;
     }
@@ -100,22 +99,22 @@ header{
 .container-menu-nav{
     display: flex;
     flex-direction: column;
-    .title{
+    &__title{
         padding: 1rem;
     }
-    .nav-three-buttons{
+    &__nav-three-buttons{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 18rem;
         margin-bottom: 3rem;
         margin-top: -1.5rem;
-    .button-and-number{
+    &__button-and-number{
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
-     &__number{
+    &__number{
         font-family: 'Roboto', sans-serif;
         font-size: 1rem;
         font-weight: 300;
@@ -160,7 +159,6 @@ header{
     }
 }
 
-
 .container-menus{
         display: flex;
         flex-direction: column;
@@ -173,16 +171,16 @@ header{
             padding: 1rem;
             margin-bottom: -1.5rem;
         }
-        .two-menus-container{
+        &__two-menus-container{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
             height: 39rem;
             margin-bottom: 1rem;
-            .bloc__nouveau{
-                background-color: #99E2D0;
-                color: #008766;
+            &__bloc-nouveau{
+                background-color: $tertiary;
+                color: $block-new-color;
                 font-weight: 500;
                 font-size: 1rem;
                 padding: 0.4rem 0.7rem 0.4rem 0.7rem;
@@ -197,13 +195,13 @@ header{
                     display: none;
                 }
             }
-            .restaurant-link{
+            &__restaurant-link{
                 text-decoration: none;
                 color: black;
                 width: 90%;
             
             }
-        .box-menu{
+        &__box-menu{
             background-color: white;
             border-radius: 20px;
             width: 100%;
@@ -212,18 +210,18 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-        &.box-menu:hover {
+            &:hover {
             cursor: pointer;
             box-shadow: 0px 5px 15px #a3a3a3;
-        }
-        &__images{
+            }
+            &__images{
             width: 100%;
             height: 70%;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             object-fit: cover;
-        }
-        &__description__colonne2 .fas:hover{
+            }
+            &__description__colonne2 .fas:hover{
             font-weight: 900;
             color: rgb(147,86,220);
             display: block;
@@ -232,13 +230,13 @@ header{
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             cursor: pointer;
-        }
-        &__description__colonne2 .fas{
+            }
+            &__description__colonne2 .fas{
             font-size: 1.5rem;
             font-weight: 100;
             color: #4F4F4F;
-        }
-        &__description{
+            }
+            &__description{
             height: 30%;
             display: flex;
             flex-direction: row;
@@ -252,10 +250,10 @@ header{
                 margin: 0;
                 padding: 0;
             }
+            }
+            }
         }
     }
-    }
-}
 
 footer{
     background-color: #353535;
@@ -272,12 +270,13 @@ footer{
     .footer__ul{
         padding: 0 0 0 1.5rem;
         height: 7.5rem;
-
+    
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        &__liste{
+        &__list{
             width: max-content;
+            list-style-type: none; 
         & a {
             color: white;
             text-decoration: none;

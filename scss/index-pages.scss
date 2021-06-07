@@ -59,12 +59,8 @@ p{
         }
     }
 
-    .header__title{
-        margin: 0.5rem;
-        }
-
     .container{
-        background-color: #F6F6F6;
+        background-color: $background;
         height: 91rem;
         .under-header{
             width: 100%;
@@ -76,11 +72,8 @@ p{
         }
     }
 
-
-    
-
     .Menu{
-        background-color: #F6F6F6;
+        background-color: $background;
         padding-top: 2rem;
         padding-bottom: 3rem;
         border-top-left-radius: 40px;
@@ -92,131 +85,114 @@ p{
         justify-content: space-around;
         align-items: center;
         margin: 0;
+        &__title-and-heart{
+            width: 90%;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__title-and-heart .fas{
+            font-size: 1.5rem;
+            font-weight: 100;
+            color: $icon;
+            margin-right: 1rem;
+            &:hover{
+                font-weight: 900;
+                color: $primary;
+                display: block;
+                background: -webkit-linear-gradient($primary,$secondary);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                cursor: pointer;
+            }
+        }
+        &__starter-dish-dessert{
+            width: 93%;
+            margin-bottom: 1rem;
+            &__title-and-underline{
+                border-bottom: 3px solid $tertiary;
+                margin: 0;
+                width: 3.2rem;
+            }
+        }
+        &__boxes{
+            height: 15.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 0.8rem;
+            margin-bottom: 3rem;
+            &__individual-boxes{
+                display: flex;
+                flex-direction: row;
+                border-radius: 20px;
+                background-color: white;
+                height: 4.6rem;
+                &__title{
+                    display: flex;
+                    flex-direction: row;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                &__description-column{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 80%;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    padding: 0.5rem;
+                }
+                &__description-and-price{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    &__description{
+                        flex-wrap: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    &__price{
+                        font-weight: 400;
+                    }
+                }
+                &__select-button{
+                    background-color: $tertiary;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 20%;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    .fa-check-circle{
+                        color: white;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .button-primary{
+            border: none;
+            padding: 1rem 1.5rem 1rem 1.5rem;
+            border-radius: 60px;
+            box-shadow: 0px 5px 20px $button-box-shadox;
+            &--gradient{
+                background: $secondary;
+                background: linear-gradient(176deg, $secondary 5%, $primary 100%);
+            }
+            &--text{
+                font-size: 1.2rem;
+                color: white;
+            }
+            &:hover{
+                cursor: pointer;
+                background: $primary;
+            }
+        }
     }
-
-    .Menu__titre-et-coeur{
-        width: 90%;
-        margin-bottom: 2rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .Menu__titre-et-coeur .fas{
-        font-size: 1.5rem;
-        font-weight: 100;
-        color: #4F4F4F;
-        margin-right: 1rem;
-    }
-
-    .Menu__titre-et-coeur .fas:hover{
-        font-weight: 900;
-        color: rgb(147,86,220);
-        display: block;
-        background: -webkit-linear-gradient(#9356dc,#ff79da);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        cursor: pointer;
-    }
-
-
-
-
-    .Menu__entrees-plats-desserts{
-        width: 93%;
-        margin-bottom: 1rem;
-    }
-
-    .Menu__entrees-plats-desserts__titre-et-souligne{
-        border-bottom: 3px solid #99E2D0;
-        margin: 0;
-        width: 3.2rem;
-    }
-
-    .Menu__les-boites{
-        height: 15.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 0.8rem;
-        margin-bottom: 3rem;
-    }
-
-    .Menu__les-boites__boite-individuelle{
-        display: flex;
-        flex-direction: row;
-        border-radius: 20px;
-        background-color: white;
-        height: 4.6rem;
-    }
-
-    .boite-individuelle__colonne-description{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 80%;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        padding: 0.5rem;
-    }
-    
-    .boite-individuelle__titre{
-        display: flex;
-        flex-direction: row;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .boite-individuelle__description-et-prix{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .boite-individuelle__description-et-prix__description{
-        flex-wrap: nowrap;
-        text-overflow: ellipsis;
-    }
-
-    .boite-individuelle__description-et-prix__prix{
-        font-weight: 400;
-    }
-
-    .boite-individuelle__bouton-selectionner{
-        background-color: #99E2D0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-
-    .fa-check-circle{
-        color: white;
-        font-size: 1.5rem;
-    }
-
-    .bouton__rose__Menus{
-        font-size: 1.2rem;
-        color: white;
-        background: rgb(255,121,218);
-        background: linear-gradient(176deg, rgba(255,121,218,1) 5%, rgba(147,86,220,1) 100%);
-        border: none;
-        padding: 1rem 3rem 1rem 3rem;
-        border-radius: 60px;
-        box-shadow: 0px 5px 20px rgb(168, 168, 168);
-    }
-
-    .bouton__rose__Menus:hover{
-        cursor: pointer;
-    }
-
-
-
 
     footer{
         background-color: #353535;
@@ -233,28 +209,29 @@ p{
         .footer__ul{
             padding: 0 0 0 1.5rem;
             height: 7.5rem;
-    
+        
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            &__liste{
-                width: max-content;
-            & a {
-                color: white;
-                text-decoration: none;
-            }
-            &:hover{
-                text-decoration: underline;
-                cursor: pointer;
-            }
-            .fa-utensils{
-                margin-right: 1rem;
-            }
-            .fa-hands-helping{
-                font-size: 0.8rem;
-                margin-right: 0.8rem;
-            }
-            }
+        &__list{
+            width: max-content;
+            list-style-type: none; 
+        & a {
+            color: white;
+            text-decoration: none;
         }
-    }
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .fa-utensils{
+            margin-right: 1rem;
+        }
+        .fa-hands-helping{
+            font-size: 0.8rem;
+            margin-right: 0.8rem;
+        }
+        }
+        }
+}
 } /* Téléphone */

@@ -46,7 +46,7 @@ ul {
   .container-under-header {
     background-color: #F6F6F6;
   }
-  .container-under-header .localisation {
+  .container-under-header__localisation {
     background-color: #EAEAEA;
     display: flex;
     flex-direction: row;
@@ -55,11 +55,11 @@ ul {
     font-weight: 600;
     color: #363636;
   }
-  .container-under-header .localisation .fa-map-marker-alt {
+  .container-under-header__localisation .fa-map-marker-alt {
     margin-right: 1rem;
     font-size: 1.15rem;
   }
-  .container-under-header .reserve {
+  .container-under-header__reserve {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,10 +67,10 @@ ul {
     text-align: center;
     padding: 2.5rem 0 3.5rem 0;
   }
-  .container-under-header .reserve .title {
+  .container-under-header__reserve__title {
     margin: 0 3rem 1rem 3rem;
   }
-  .container-under-header .reserve .text-discover {
+  .container-under-header__reserve__text-discover {
     margin: 0rem 1.5rem 1.5rem 1.5rem;
   }
 
@@ -88,7 +88,7 @@ ul {
     font-size: 1.2rem;
     color: white;
   }
-  .button-primary.button-primary:hover {
+  .button-primary:hover {
     cursor: pointer;
     background: #9356DC;
   }
@@ -97,10 +97,10 @@ ul {
     display: flex;
     flex-direction: column;
   }
-  .container-menu-nav .title {
+  .container-menu-nav__title {
     padding: 1rem;
   }
-  .container-menu-nav .nav-three-buttons {
+  .container-menu-nav__nav-three-buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -108,13 +108,13 @@ ul {
     margin-bottom: 3rem;
     margin-top: -1.5rem;
   }
-  .container-menu-nav .nav-three-buttons .button-and-number {
+  .container-menu-nav__nav-three-buttons__button-and-number {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
   }
-  .container-menu-nav .nav-three-buttons .button-and-number__number {
+  .container-menu-nav__nav-three-buttons__button-and-number__number {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: 300;
@@ -127,7 +127,7 @@ ul {
     left: 0.2rem;
     z-index: 1;
   }
-  .container-menu-nav .nav-three-buttons .button-and-number__button-nav {
+  .container-menu-nav__nav-three-buttons__button-and-number__button-nav {
     width: 85%;
     display: flex;
     flex-direction: row;
@@ -144,12 +144,12 @@ ul {
     position: relative;
     left: -0.8rem;
   }
-  .container-menu-nav .nav-three-buttons .button-and-number__button-nav .fas {
+  .container-menu-nav__nav-three-buttons__button-and-number__button-nav .fas {
     color: #7E7E7E;
     font-size: 1.2rem;
     margin-right: 1.2rem;
   }
-  .container-menu-nav .nav-three-buttons .button-and-number__button-nav.button-nav:hover {
+  .container-menu-nav__nav-three-buttons__button-and-number__button-nav.button-nav:hover {
     background-color: #F5EDFF;
     cursor: pointer;
   }
@@ -167,7 +167,7 @@ ul {
     padding: 1rem;
     margin-bottom: -1.5rem;
   }
-  .container-menus .two-menus-container {
+  .container-menus__two-menus-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -175,7 +175,7 @@ ul {
     height: 39rem;
     margin-bottom: 1rem;
   }
-  .container-menus .two-menus-container .bloc__nouveau {
+  .container-menus__two-menus-container__bloc-nouveau {
     background-color: #99E2D0;
     color: #008766;
     font-weight: 500;
@@ -188,15 +188,15 @@ ul {
     position: relative;
     top: 3rem;
   }
-  .container-menus .two-menus-container .bloc__nouveau--none {
+  .container-menus__two-menus-container__bloc-nouveau--none {
     display: none;
   }
-  .container-menus .two-menus-container .restaurant-link {
+  .container-menus__two-menus-container__restaurant-link {
     text-decoration: none;
     color: black;
     width: 90%;
   }
-  .container-menus .two-menus-container .box-menu {
+  .container-menus__two-menus-container__box-menu {
     background-color: white;
     border-radius: 20px;
     width: 100%;
@@ -206,18 +206,18 @@ ul {
     flex-direction: column;
     justify-content: space-between;
   }
-  .container-menus .two-menus-container .box-menu.box-menu:hover {
+  .container-menus__two-menus-container__box-menu:hover {
     cursor: pointer;
     box-shadow: 0px 5px 15px #a3a3a3;
   }
-  .container-menus .two-menus-container .box-menu__images {
+  .container-menus__two-menus-container__box-menu__images {
     width: 100%;
     height: 70%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
   }
-  .container-menus .two-menus-container .box-menu__description__colonne2 .fas:hover {
+  .container-menus__two-menus-container__box-menu__description__colonne2 .fas:hover {
     font-weight: 900;
     color: #9356dc;
     display: block;
@@ -227,12 +227,12 @@ ul {
     -webkit-text-fill-color: transparent;
     cursor: pointer;
   }
-  .container-menus .two-menus-container .box-menu__description__colonne2 .fas {
+  .container-menus__two-menus-container__box-menu__description__colonne2 .fas {
     font-size: 1.5rem;
     font-weight: 100;
     color: #4F4F4F;
   }
-  .container-menus .two-menus-container .box-menu__description {
+  .container-menus__two-menus-container__box-menu__description {
     height: 30%;
     display: flex;
     flex-direction: row;
@@ -240,10 +240,10 @@ ul {
     align-items: center;
     padding: 0 1.5rem 0 1rem;
   }
-  .container-menus .two-menus-container .box-menu__description__titre {
+  .container-menus__two-menus-container__box-menu__description__titre {
     margin: 0 0 0.2rem 0;
   }
-  .container-menus .two-menus-container .box-menu__description__texte {
+  .container-menus__two-menus-container__box-menu__description__texte {
     margin: 0;
     padding: 0;
   }
@@ -268,21 +268,22 @@ ul {
     flex-direction: column;
     justify-content: space-around;
   }
-  footer .footer__ul__liste {
+  footer .footer__ul__list {
     width: max-content;
+    list-style-type: none;
   }
-  footer .footer__ul__liste a {
+  footer .footer__ul__list a {
     color: white;
     text-decoration: none;
   }
-  footer .footer__ul__liste:hover {
+  footer .footer__ul__list:hover {
     text-decoration: underline;
     cursor: pointer;
   }
-  footer .footer__ul__liste .fa-utensils {
+  footer .footer__ul__list .fa-utensils {
     margin-right: 1rem;
   }
-  footer .footer__ul__liste .fa-hands-helping {
+  footer .footer__ul__list .fa-hands-helping {
     font-size: 0.8rem;
     margin-right: 0.8rem;
   }
