@@ -1,338 +1,293 @@
-
-
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-
-    body{
-        width: 100%;
-        margin: auto;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    h1{
-        font-family: 'Shrikhand', cursive;
-    }
-
-    h2{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.7rem;
-    }
-
-    h3{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.2rem;
-        font-weight: 400;
-    }
-
-    p{
-        font-weight: 200;
-        font-size: 1.2rem;
-    }
-
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        box-shadow: 0px 0px 5px rgb(121, 121, 121);
-        position: relative;
-        z-index: 1;
-    }
-
-.header__titre{
-        margin: 0.5rem;
-    }
-
-
-
-
-    .container-under-header{
-        background-color: #F6F6F6;
-    }
-
-    .container-under-header__localisation{
-        background-color: #EAEAEA;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
-        font-weight: 600;
-        color: #363636;
-    }
-
-    .fa-map-marker-alt{
-        margin-right: 1rem;
-        font-size: 1.15rem;
-    }
-
-    .container-under-header__reservez{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2.5rem 0 3.5rem 0;
-    }
-
-    .container-under-header__titre{
-        text-align: center;
-        margin: 0 3rem 1rem 3rem;
-    }
-
-    .container-under-header__texte-decouvrez{
-        text-align: center;
-        margin: 0rem 1.5rem 1.5rem 1.5rem;
-    }
-
-    .bouton__rose{
-        font-size: 1.2rem;
-        color: white;
-        background: rgb(255,121,218);
-        background: linear-gradient(176deg, rgba(255,121,218,1) 5%, rgba(147,86,220,1) 100%);
-        border: none;
-        padding: 1rem 1.5rem 1rem 1.5rem;
-        border-radius: 60px;
-        box-shadow: 0px 5px 20px rgb(168, 168, 168);
-    }
-
-    .bouton__rose:hover{
-        cursor: pointer;
-    }
-
-
-
-
-    .container-menus-nav{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container-titre{
-        padding: 1rem;
-    }
-
-    .nav-trois-boutons{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 18rem;
-        margin-bottom: 3rem;
-        margin-top: -1.5rem;
-    }
-
-    .nav-trois-boutons__bouton-et-chiffre{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .bouton-nav{
-        width: 85%;
-        height: 4.5rem;
-        color: #191919;
-        background-color: #F6F6F6;
-        border-radius: 20px;
-        border: none;
-        box-shadow: 0px 5px 10px rgb(219, 219, 219);
-        font-size: 1rem;
-        font-weight: 600;
-
-        position: relative;
-        left: -0.8rem;
-    }
-
-    .bouton-nav:hover{
-        background-color: #F5EDFF;
-        cursor: pointer;
-    }
-
-    .bouton-nav__numero{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        font-weight: 300;
-        color: white;
-        background-color: #9356DC;
-        padding: 0.25rem 0.55rem;
-        border-radius: 50px;
-        align-self: center;
-
-        position: relative;
-        left: 0.2rem;
-        z-index: 1;
-
-    }
-
-    .bouton-nav__composants{
-        align-self: center;
-        width: 100%;
-    }
-
-    .bouton-nav .fas{
-        color: #7E7E7E;
-        font-size: 1.2rem;
-        margin-right: 1.2rem;
-    }
-
-
-
-
-    .container-menus{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-content: center;
-        background-color: #F6F6F6;
-        margin: 0;
-        padding-bottom: 4rem;
-    }
-    
-    #titre_restaurants{
-        padding: 1rem;
-        margin-bottom: -1.5rem;
-    }
-
-    .container-menus__deux-menus{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 39rem;
-        margin-bottom: 1rem;
-    }
-
-    .container-menus__boite-menu{
-        background-color: white;
-        border-radius: 20px;
-        width: 100%;
-        height: 17rem;
-        box-shadow: 0px 3px 8px #dbdbdb;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .lien-restaurants{
-        text-decoration: none;
-        color: black;
-        width: 90%;
-    }
-
-    .container-menus__boite-menu:hover {
-        cursor: pointer;
-        box-shadow: 0px 5px 15px #a3a3a3;
-    }
-
-    .images_boites{
-        width: 100%;
-        height: 70%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        object-fit: cover;
-    }
-
-    .bloc__nouveau{
-        background-color: #99E2D0;
-        color: #008766;
-        font-weight: 500;
-        font-size: 1rem;
-        padding: 0.4rem 0.7rem 0.4rem 0.7rem;
-        margin: 0 2rem 0 0;
-        border-radius: 3px;
-        width: min-content;
-        align-self: flex-end;
-
-        position: relative;
-        top: 3rem;
-    }
-
-    .bloc_nouveau_none{
-        display: none;
-    }
-
-    .container-menus__description{
-        height: 30%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 1.5rem 0 1rem;
-    }
-
-    .container-menus__description__titre{
-        margin: 0 0 0.2rem 0;
-    }
-
-    .container-menus__description__texte{
-        margin: 0;
-        padding: 0;
-    }
-
-    .container-menus__description__colonne2 .fas{
-        font-size: 1.5rem;
-        font-weight: 100;
-        color: #4F4F4F;
-    }
-
-    .container-menus__description__colonne2 .fas:hover{
-        font-weight: 900;
-        color: rgb(147,86,220);
-        display: block;
-        background: -webkit-linear-gradient(#9356dc,#ff79da);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        cursor: pointer;
-    }
-
-
-
-
-    footer{
-        background-color: #353535;
-        margin: 0;
-        border: 1px solid #353535;
-        color: white;
-        padding-top: 0.5rem;
-        padding-bottom: 1rem;
-    }
-
-    .footer__titre{
-        padding-left: 1.5rem;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-    }
-
-    ul{
-        list-style-type: none;
-    }
-
-    .footer__ul{
-        padding: 0 0 0 1.5rem;
-        height: 7.5rem;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .footer__ul__liste{
-        width: max-content;
-    }
-
-    .footer__ul__liste:hover{
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    .footer__ul__liste a{
-        color: white;
-        text-decoration: none;
-    }
-
-    .fa-utensils{
-        margin-right: 1rem;
-    }
-
-    .fa-hands-helping{
-        font-size: 0.8rem;
-        margin-right: 0.8rem;
-    }
-} /* Téléphone */
+@charset "UTF-8";
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 5px #797979;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header__title {
+    margin: 0.5rem;
+  }
+
+  .container-under-header {
+    background-color: #F6F6F6;
+  }
+  .container-under-header__localisation {
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: 600;
+    color: #363636;
+  }
+  .container-under-header__localisation .fa-map-marker-alt {
+    margin-right: 1rem;
+    font-size: 1.15rem;
+  }
+  .container-under-header__reserve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 0 3.5rem 0;
+  }
+  .container-under-header__reserve__title {
+    margin: 0 3rem 1rem 3rem;
+  }
+  .container-under-header__reserve__text-discover {
+    margin: 0rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .button-primary {
+    border: none;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 60px;
+    box-shadow: 0px 5px 20px #a8a8a8;
+  }
+  .button-primary--gradient {
+    background: #FF79DA;
+    background: linear-gradient(176deg, #FF79DA 5%, #9356DC 100%);
+  }
+  .button-primary--text {
+    font-size: 1.2rem;
+    color: white;
+  }
+  .button-primary:hover {
+    cursor: pointer;
+    background: #9356DC;
+  }
+
+  .container-menu-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-menu-nav__title {
+    padding: 1rem;
+  }
+  .container-menu-nav__nav-three-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 18rem;
+    margin-bottom: 3rem;
+    margin-top: -1.5rem;
+  }
+  .container-menu-nav__nav-three-buttons__button-and-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .container-menu-nav__nav-three-buttons__button-and-number__number {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    background-color: #9356DC;
+    padding: 0.25rem 0.55rem;
+    border-radius: 50px;
+    align-self: center;
+    position: relative;
+    left: 0.2rem;
+    z-index: 1;
+  }
+  .container-menu-nav__nav-three-buttons__button-and-number__button-nav {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    color: #191919;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 5px 10px #dbdbdb;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    left: -0.8rem;
+  }
+  .container-menu-nav__nav-three-buttons__button-and-number__button-nav .fas {
+    color: #7E7E7E;
+    font-size: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .container-menu-nav__nav-three-buttons__button-and-number__button-nav:hover {
+    background-color: #F5EDFF;
+    cursor: pointer;
+  }
+
+  .container-menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #F6F6F6;
+    margin: 0;
+    padding-bottom: 4rem;
+  }
+  .container-menus > #restaurant-title {
+    padding: 1rem;
+    margin-bottom: -1.5rem;
+  }
+  .container-menus__two-menus-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 39rem;
+    margin-bottom: 1rem;
+  }
+  .container-menus__two-menus-container__bloc-nouveau {
+    background-color: #99E2D0;
+    color: #008766;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+    margin: 0 2rem 0 0;
+    border-radius: 3px;
+    width: min-content;
+    align-self: flex-end;
+    position: relative;
+    top: 3rem;
+  }
+  .container-menus__two-menus-container__bloc-nouveau--none {
+    display: none;
+  }
+  .container-menus__two-menus-container__restaurant-link {
+    text-decoration: none;
+    color: black;
+    width: 90%;
+  }
+  .container-menus__two-menus-container__box-menu {
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 17rem;
+    box-shadow: 0px 3px 8px #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container-menus__two-menus-container__box-menu:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 15px #a3a3a3;
+  }
+  .container-menus__two-menus-container__box-menu__images {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+  }
+  .container-menus__two-menus-container__box-menu__description__colonne2 .fas:hover {
+    font-weight: 900;
+    color: #9356dc;
+    display: block;
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+  .container-menus__two-menus-container__box-menu__description__colonne2 .fas {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #4F4F4F;
+  }
+  .container-menus__two-menus-container__box-menu__description {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 0 1rem;
+  }
+  .container-menus__two-menus-container__box-menu__description__titre {
+    margin: 0 0 0.2rem 0;
+  }
+  .container-menus__two-menus-container__box-menu__description__texte {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer {
+    background-color: #353535;
+    margin: 0;
+    border: 1px solid #353535;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  footer .footer__title {
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  footer .footer__ul {
+    padding: 0 0 0 1.5rem;
+    height: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer .footer__ul__list {
+    width: max-content;
+    list-style-type: none;
+  }
+  footer .footer__ul__list a {
+    color: white;
+    text-decoration: none;
+  }
+  footer .footer__ul__list:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  footer .footer__ul__list .fa-utensils {
+    margin-right: 1rem;
+  }
+  footer .footer__ul__list .fa-hands-helping {
+    font-size: 0.8rem;
+    margin-right: 0.8rem;
+  }
+}
+/* Téléphone */
+
+/*# sourceMappingURL=index.css.map */
