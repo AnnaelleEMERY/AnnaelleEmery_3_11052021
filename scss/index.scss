@@ -150,7 +150,7 @@ header{
             font-size: 1.2rem;
             margin-right: 1.2rem;
         }
-        &.button-nav:hover{
+        &:hover{
             background-color: #F5EDFF;
             cursor: pointer;
         }
@@ -199,7 +199,6 @@ header{
                 text-decoration: none;
                 color: black;
                 width: 90%;
-            
             }
         &__box-menu{
             background-color: white;
@@ -212,7 +211,7 @@ header{
             justify-content: space-between;
             &:hover {
             cursor: pointer;
-            box-shadow: 0px 5px 15px #a3a3a3;
+            box-shadow: 0px 5px 15px $box-shadows-hover;
             }
             &__images{
             width: 100%;

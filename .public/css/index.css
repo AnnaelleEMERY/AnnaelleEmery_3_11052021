@@ -149,7 +149,7 @@ ul {
     font-size: 1.2rem;
     margin-right: 1.2rem;
   }
-  .container-menu-nav__nav-three-buttons__button-and-number__button-nav.button-nav:hover {
+  .container-menu-nav__nav-three-buttons__button-and-number__button-nav:hover {
     background-color: #F5EDFF;
     cursor: pointer;
   }
