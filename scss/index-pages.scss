@@ -145,10 +145,12 @@ p{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    width: 76%;
+                    width: 100%;
                     border-top-left-radius: 20px;
                     border-bottom-left-radius: 20px;
                     padding: 0.5rem;
+                    overflow: hidden;
+                    transition: ease-in-out 400ms;
                 }
                 &__description-and-price{
                     display: flex;
@@ -171,14 +173,27 @@ p{
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    width: 20%;
+                    width: 0%;
                     border-top-right-radius: 20px;
                     border-bottom-right-radius: 20px;
                     .fa-check-circle{
                         color: white;
-                        font-size: 1.5rem;
+                        font-size: 0rem;
+                        transform: rotate(0deg);
                     }
                 }
+            &:hover .Menu__boxes__individual-boxes__description-column{
+                cursor: pointer;
+                width: 76%;
+            }
+            &:hover .Menu__boxes__individual-boxes__select-button {
+                cursor: pointer;
+                width: 20%;
+            }
+            &:hover .fa-check-circle {
+                font-size: 1.5rem;
+                transform: rotate(90deg);
+            }
             }
         }
         .button-primary{

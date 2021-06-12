@@ -146,12 +146,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
+    width: 76%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 0.5rem;
-    overflow: hidden;
-    transition: ease-in-out 400ms;
   }
   .Menu__boxes__individual-boxes__description-and-price {
     display: flex;
@@ -174,26 +172,13 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 0%;
+    width: 20%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
   .Menu__boxes__individual-boxes__select-button .fa-check-circle {
     color: white;
-    font-size: 0rem;
-    transform: rotate(0deg);
-  }
-  .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__description-column {
-    cursor: pointer;
-    width: 76%;
-  }
-  .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__select-button {
-    cursor: pointer;
-    width: 20%;
-  }
-  .Menu__boxes__individual-boxes:hover .fa-check-circle {
     font-size: 1.5rem;
-    transform: rotate(90deg);
   }
   .Menu .button-primary {
     border: none;
@@ -255,5 +240,3 @@ p {
   }
 }
 /* Téléphone */
-
-/*# sourceMappingURL=index-pages.css.map */

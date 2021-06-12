@@ -83,8 +83,8 @@ header{
     border-radius: 60px;
     box-shadow: 0px 5px 20px $button-box-shadox;
     &--gradient{
-        background: $secondary;
         background: linear-gradient(176deg, $secondary 5%, $primary 100%);
+        
     }
     &--text{
         font-size: 1.2rem;
@@ -293,5 +293,5 @@ footer{
         }
         }
     }
-}
-} /* Téléphone */
+    }
+    } /* Téléphone */
