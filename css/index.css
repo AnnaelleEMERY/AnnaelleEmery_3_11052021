@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -7,12 +15,30 @@
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes spin {
+@-webkit-keyframes spinreverse {
   0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes disappear {
+  100% {
+    display: none;
+  }
+}
+@keyframes disappear {
+  100% {
+    display: none;
   }
 }
 body {
@@ -47,14 +73,21 @@ ul {
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   /* loader double cercle */
-  .load-section {
+  .load-div {
+    cursor: progress;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 20rem;
+    height: 100%;
     background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    z-index: 10001;
+    -webkit-animation: disappear 3s;
+    animation: disappear 3s;
   }
 
   .loader {
@@ -64,27 +97,38 @@ ul {
     position: relative;
   }
 
-  .loader-double {
+  .loader-circles {
     border-radius: 50%;
-    border: 5px solid transparent;
+    border: 3px solid transparent;
     border-top-color: #9356DC;
-    border-bottom-color: #9356DC;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
   }
-  .loader-double::after {
+  .loader-circles::after {
     content: "";
     position: absolute;
     top: 5px;
     left: 5px;
     right: 5px;
     bottom: 5px;
-    border: 5px solid transparent;
+    border: 3px solid transparent;
     border-top-color: #FF79DA;
-    border-bottom-color: #FF79DA;
     border-radius: 50%;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
+    -webkit-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+  }
+  .loader-circles::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    right: 13px;
+    bottom: 13px;
+    border: 3px solid transparent;
+    border-top-color: #fface8;
+    border-radius: 50%;
+    -webkit-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
   }
 
   /* fin loader double cercle */

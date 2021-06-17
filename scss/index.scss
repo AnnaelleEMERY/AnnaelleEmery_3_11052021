@@ -37,14 +37,21 @@ ul{
 
 /* loader double cercle */
 
-.load-section {
+.load-div {
+    cursor: progress;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 20rem;
+    height: 100%;
     background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    z-index: 10001;
+    -webkit-animation: disappear 3s;
+            animation: disappear 3s;
 }
 
 .loader{
@@ -54,11 +61,10 @@ ul{
     position: relative;
 }
 
-.loader-double {
+.loader-circles {
     border-radius: 50%;
-    border: 5px solid transparent;
+    border: 3px solid transparent;
     border-top-color: $primary;
-    border-bottom-color: $primary;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
     &::after{
@@ -68,12 +74,24 @@ ul{
         left: 5px;
         right: 5px;
         bottom: 5px;
-        border: 5px solid transparent;
+        border: 3px solid transparent;
         border-top-color: $secondary;
-        border-bottom-color: $secondary;
         border-radius: 50%;
-        -webkit-animation: spin 1s linear infinite;
-                animation: spin 1s linear infinite;
+        -webkit-animation: spin 10s linear infinite;
+        animation: spin 10s linear infinite;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        right: 13px;
+        bottom: 13px;
+        border: 3px solid transparent;
+        border-top-color: lighten($secondary, 10%);
+        border-radius: 50%;
+        -webkit-animation: spin 5s linear infinite;
+        animation: spin 5s linear infinite;
     }
 }
 
@@ -199,7 +217,7 @@ header{
             margin-right: 1.2rem;
         }
         &:hover{
-            background-color: #F5EDFF;
+            background-color: $fonctionnement-button-hover;
             cursor: pointer;
         }
     }
@@ -306,9 +324,9 @@ header{
     }
 
 footer{
-    background-color: #353535;
+    background-color: $footer-background-color;
     margin: 0;
-    border: 1px solid #353535;
+    border: 1px solid $footer-background-color;
     color: white;
     padding-top: 0.5rem;
     padding-bottom: 1rem;

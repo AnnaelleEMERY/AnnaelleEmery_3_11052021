@@ -1,17 +1,39 @@
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
+@-webkit-keyframes spin {
+    0% { transform: rotate(0deg);
     }
-    100% {
-        transform: rotate(360deg);
+    100% { transform: rotate(360deg);
     }
 }
 
-@-webkit-keyframes spin {
-    0% {
-        transform: rotate(0deg);
+@keyframes spin {
+    0% { transform: rotate(0deg);
     }
+    100% { transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spinreverse {
+    0% { transform: rotate(0deg);
+    }
+    100% { transform: rotate(-360deg);
+    }
+}
+
+@keyframes spinreverse {
+    0% { transform: rotate(0deg);
+    }
+    100% { transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes disappear {
     100% {
-        transform: rotate(360deg);
+        display: none;
+    }
+}
+
+@keyframes disappear {
+    100% {
+        display: none;
     }
 }
