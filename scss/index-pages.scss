@@ -40,7 +40,7 @@ p{
     margin: 0;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 320px) {
 
     /* loader double cercle */
 
@@ -126,7 +126,7 @@ p{
 
     .container{
         background-color: $background;
-        height: 91rem;
+        height: 100%;
         .under-header{
             width: 100%;
             margin: 0;
@@ -140,7 +140,7 @@ p{
     .Menu{
         background-color: $background;
         padding-top: 2rem;
-        padding-bottom: 3rem;
+        padding-bottom: 0rem;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         position: relative;
@@ -196,7 +196,7 @@ p{
                 background-color: white;
                 height: 4.6rem;
                 animation: fadein 1s;
-                animation-delay: 3s;
+                animation-delay: 2.9s;
                 &:hover {
                     & .Menu__boxes__individual-boxes__description-column{
                         cursor: pointer;
@@ -285,6 +285,7 @@ p{
 
     footer{
         background-color: #353535;
+        width: 100%;
         margin: 0;
         border: 1px solid #353535;
         color: white;
@@ -324,3 +325,4 @@ p{
         }
 }
 } /* Téléphone */
+
