@@ -281,21 +281,34 @@ p {
     cursor: pointer;
     width: 76%;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 481px) {
+  .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__description-column {
+    width: 110%;
+  }
+}
+@media only screen and (min-width: 320px) {
   .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__select-button {
     cursor: pointer;
     width: 20%;
   }
+}
+@media only screen and (min-width: 320px) {
   .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__select-button .fa-check-circle {
     cursor: pointer;
     transform: rotate(0turn);
     font-size: 1.5rem;
   }
+}
+@media only screen and (min-width: 320px) {
   .Menu__boxes__individual-boxes__title {
     text-overflow: ellipsis;
     overflow: hidden;
     display: ruby;
     padding-right: 3.5rem;
   }
+}
+@media only screen and (min-width: 320px) {
   .Menu__boxes__individual-boxes__description-column {
     display: flex;
     flex-direction: column;
@@ -307,6 +320,8 @@ p {
     overflow: hidden;
     transition: all 300ms ease-in-out;
   }
+}
+@media only screen and (min-width: 320px) {
   .Menu__boxes__individual-boxes__description-and-price {
     display: flex;
     flex-direction: row;
@@ -322,6 +337,8 @@ p {
   .Menu__boxes__individual-boxes__description-and-price__price {
     font-weight: 400;
   }
+}
+@media only screen and (min-width: 320px) {
   .Menu__boxes__individual-boxes__select-button {
     background-color: #99E2D0;
     display: flex;
@@ -339,6 +356,8 @@ p {
     transform: rotate(-1turn);
     transition: all 300ms ease-in-out;
   }
+}
+@media only screen and (min-width: 320px) {
   .Menu .button-primary {
     border: none;
     padding: 1rem 1.5rem 1rem 1.5rem;
@@ -357,7 +376,8 @@ p {
     cursor: pointer;
     background: #9356DC;
   }
-
+}
+@media only screen and (min-width: 320px) {
   footer {
     background-color: #353535;
     width: 100%;
@@ -399,6 +419,6 @@ p {
     margin-right: 0.8rem;
   }
 }
-/* Téléphone */
+/* Téléphone et tablettes */
 
 /*# sourceMappingURL=index-pages.css.map */

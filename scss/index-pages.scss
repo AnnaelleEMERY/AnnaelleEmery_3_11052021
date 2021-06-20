@@ -201,6 +201,9 @@ p{
                     & .Menu__boxes__individual-boxes__description-column{
                         cursor: pointer;
                         width: 76%;
+                        @media #{$breakpoint-tablet} {
+                            width: 110%;
+                        }
                     }
                     & .Menu__boxes__individual-boxes__select-button {
                         cursor: pointer;
@@ -324,5 +327,5 @@ p{
         }
         }
 }
-} /* Téléphone */
+} /* Téléphone et tablettes */
 
