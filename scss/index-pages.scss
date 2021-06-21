@@ -130,6 +130,10 @@ p{
         .under-header{
             width: 100%;
             margin: 0;
+            @media #{$breakpoint-tablet-min} {
+                display: flex;
+                height: 25rem;
+            }
             &__banner-menu{
                 width: 100%;
                 object-fit: cover;
@@ -201,7 +205,7 @@ p{
                     & .Menu__boxes__individual-boxes__description-column{
                         cursor: pointer;
                         width: 76%;
-                        @media #{$breakpoint-tablet} {
+                        @media #{$breakpoint-tablet-min} {
                             width: 110%;
                         }
                     }

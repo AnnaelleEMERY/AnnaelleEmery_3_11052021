@@ -258,6 +258,9 @@ header{
         
                 position: relative;
                 top: 3rem;
+                @media #{$breakpoint-tablet-min} {
+                    left: -3%;
+                }
                 &--none{
                     display: none;
                 }

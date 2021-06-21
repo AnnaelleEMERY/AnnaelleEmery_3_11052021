@@ -209,11 +209,20 @@ p {
     width: 100%;
     margin: 0;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 481px) {
+  .container .under-header {
+    display: flex;
+    height: 25rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .container .under-header__banner-menu {
     width: 100%;
     object-fit: cover;
   }
-
+}
+@media only screen and (min-width: 320px) {
   .Menu {
     background-color: #F6F6F6;
     padding-top: 2rem;
