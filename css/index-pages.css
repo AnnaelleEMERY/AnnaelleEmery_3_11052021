@@ -85,10 +85,10 @@
   border: none;
   padding: 1rem 1.5rem 1rem 1.5rem;
   border-radius: 60px;
-  box-shadow: 0px 5px 20px #a8a8a8;
+  box-shadow: 0px 1px 20px #a8a8a8;
 }
 .button-primary--gradient {
-  background: linear-gradient(176deg, #FF79DA 5%, #9356DC 100%);
+  background: linear-gradient(176deg, #ff79da 5%, #9256dc 100%);
 }
 .button-primary--text {
   font-size: 1.2rem;
@@ -106,7 +106,8 @@
 }
 .button-primary:hover {
   cursor: pointer;
-  background: #9356DC;
+  background: linear-gradient(176deg, #ff93e1 0%, #a06be0 185%);
+  box-shadow: 0px 1px 20px #8f8f8f;
 }
 
 h1 {
@@ -240,7 +241,7 @@ p {
   .loader-circles {
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #9356DC;
+    border-top-color: #9256dc;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
   }
@@ -252,7 +253,7 @@ p {
     right: 5px;
     bottom: 5px;
     border: 3px solid transparent;
-    border-top-color: #FF79DA;
+    border-top-color: #ff79da;
     border-radius: 50%;
     -webkit-animation: spin 10s linear infinite;
     animation: spin 10s linear infinite;
@@ -386,7 +387,7 @@ p {
     font-weight: 900;
     color: #9356dc;
     display: block;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background: -webkit-linear-gradient(#9256dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -397,7 +398,7 @@ p {
     margin-bottom: 1rem;
   }
   .Menu__starter-dish-dessert__title-and-underline {
-    border-bottom: 3px solid #99E2D0;
+    border-bottom: 3px solid #99e2d0;
     margin: 0;
     padding-bottom: 0.2rem;
     width: 3.2rem;
@@ -547,7 +548,7 @@ p {
 }
 @media only screen and (min-width: 320px) {
   .Menu__boxes__individual-boxes__select-button {
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     display: flex;
     flex-direction: row;
     justify-content: center;
