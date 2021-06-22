@@ -306,6 +306,9 @@ p{
                     & .Menu__boxes__individual-boxes__select-button {
                         cursor: pointer;
                         width: 20%;
+                        @media #{$breakpoint-TV-min} {
+                            width: 15%;
+                        }
                     }
                     & .Menu__boxes__individual-boxes__select-button .fa-check-circle {
                         cursor: pointer;
