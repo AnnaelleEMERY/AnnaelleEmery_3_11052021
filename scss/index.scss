@@ -10,26 +10,62 @@ body{
 
 h1{
     font-family: 'Shrikhand', cursive;
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 2.5rem;
+    }
 }
 
 h2{
     font-family: 'Roboto', sans-serif;
     font-size: 1.7rem;
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 1.8rem;
+    }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 2.5rem;
+    }
 }
 
 h3{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 1.5rem;
+    }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 2rem;
+    }
 }
 
 p{
     font-weight: 200;
     font-size: 1.2rem;
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 1.5rem;
+    }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 1.8rem;
+    }
 }
 
 ul{
     list-style-type: none;
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 1.3rem;
+    }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -147,6 +183,15 @@ header{
     padding: 1rem 1.5rem 1rem 1.5rem;
     border-radius: 60px;
     box-shadow: 0px 5px 20px $button-box-shadox;
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 1.4rem;
+    }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 1.5rem;
+    }
+
     &--gradient{
         background: linear-gradient(176deg, $secondary 5%, $primary 100%);
         
@@ -190,7 +235,6 @@ header{
         align-self: center;
         
         position: relative;
-        left: 0.2rem;
         z-index: 1;
     }
     &__button-nav{
@@ -210,6 +254,16 @@ header{
         
         position: relative;
         left: -0.8rem;
+
+        @media #{$breakpoint-tablet-max} {
+            width: 70%;
+        }
+        @media #{$breakpoint-TV-min} {
+            font-size: 1.2rem;
+        }
+        @media #{$breakpoint-TV-max} {
+            font-size: 1.4rem;
+        }
         .fas{
             color: #7E7E7E;
             font-size: 1.2rem;
@@ -243,6 +297,18 @@ header{
             align-items: center;
             height: 39rem;
             margin-bottom: 1rem;
+
+            @media #{$breakpoint-tablet-mid} {
+                height: 47rem;
+            }
+
+            @media #{$breakpoint-tablet-max} {
+                flex-direction: row;
+                justify-content: center;
+                height: 100%;
+                margin-bottom: 0rem;
+            }
+
             &__bloc-nouveau{
                 background-color: $tertiary;
                 color: $block-new-color;
@@ -257,10 +323,13 @@ header{
                 align-self: flex-end;
         
                 position: relative;
-                top: 3rem;
-                @media #{$breakpoint-tablet-min} {
-                    left: -3%;
+                top: 2.5rem;
+                left: 1.5rem;
+
+                @media #{$breakpoint-tablet-max} {
+                    left: 1.3rem;
                 }
+
                 &--none{
                     display: none;
                 }
@@ -269,6 +338,17 @@ header{
                 text-decoration: none;
                 color: black;
                 width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media #{$breakpoint-tablet-max} {
+                    margin: 2rem;
+                }
+
+                @media #{$breakpoint-TV-min} {
+                    width: 45%;
+                }
             }
         &__box-menu{
             background-color: white;
@@ -279,6 +359,19 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @media #{$breakpoint-tablet-mid} {
+                height: 20rem;
+            }
+
+            @media #{$breakpoint-TV-mid} {
+                height: 28rem;
+            }
+
+            @media #{$breakpoint-TV-min} {
+                height: 27rem;
+            }
+
             &:hover {
             cursor: pointer;
             box-shadow: 0px 5px 15px $box-shadows-hover;
@@ -336,6 +429,14 @@ footer{
         padding-left: 1.5rem;
         font-size: 1.2rem;
         letter-spacing: 1px;
+
+        @media #{$breakpoint-TV-min} {
+            font-size: 1.8rem;
+        }
+
+        @media #{$breakpoint-TV-max} {
+            font-size: 2.2rem;
+        }
     }
     .footer__ul{
         padding: 0 0 0 1.5rem;
@@ -344,11 +445,20 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
+        @media #{$breakpoint-TV-max} {
+            height: 100%;
+        }
+
         &__list{
             width: -webkit-max-content;
             width: -moz-max-content;
             width: max-content;
             list-style-type: none; 
+
+            @media #{$breakpoint-TV-max} {
+                margin-bottom: 1rem;
+            }
         & a {
             color: white;
             text-decoration: none;
@@ -367,4 +477,5 @@ footer{
         }
     }
     }
-    } /* Téléphone */
+} /* Téléphone */
+

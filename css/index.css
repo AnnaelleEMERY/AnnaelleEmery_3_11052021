@@ -90,10 +90,25 @@ body {
 h1 {
   font-family: "Shrikhand", cursive;
 }
+@media only screen and (min-width: 1824px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
+}
+@media only screen and (min-width: 1824px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 
 h3 {
@@ -101,14 +116,44 @@ h3 {
   font-size: 1.2rem;
   font-weight: 400;
 }
+@media only screen and (min-width: 1824px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
 
 p {
   font-weight: 200;
   font-size: 1.2rem;
 }
+@media only screen and (min-width: 1824px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  p {
+    font-size: 1.8rem;
+  }
+}
 
 ul {
   list-style-type: none;
+}
+@media only screen and (min-width: 1824px) {
+  ul {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  ul {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 320px) {
@@ -221,18 +266,35 @@ ul {
     border-radius: 60px;
     box-shadow: 0px 5px 20px #a8a8a8;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 1824px) {
+  .button-primary {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  .button-primary {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .button-primary--gradient {
     background: linear-gradient(176deg, #FF79DA 5%, #9356DC 100%);
   }
+}
+@media only screen and (min-width: 320px) {
   .button-primary--text {
     font-size: 1.2rem;
     color: white;
   }
+}
+@media only screen and (min-width: 320px) {
   .button-primary:hover {
     cursor: pointer;
     background: #9356DC;
   }
-
+}
+@media only screen and (min-width: 320px) {
   .container-menu-nav {
     display: flex;
     flex-direction: column;
@@ -264,7 +326,6 @@ ul {
     border-radius: 50px;
     align-self: center;
     position: relative;
-    left: 0.2rem;
     z-index: 1;
   }
   .container-menu-nav__nav-three-buttons__button-and-number__button-nav {
@@ -284,16 +345,36 @@ ul {
     position: relative;
     left: -0.8rem;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 992px) {
+  .container-menu-nav__nav-three-buttons__button-and-number__button-nav {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1824px) {
+  .container-menu-nav__nav-three-buttons__button-and-number__button-nav {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  .container-menu-nav__nav-three-buttons__button-and-number__button-nav {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .container-menu-nav__nav-three-buttons__button-and-number__button-nav .fas {
     color: #7E7E7E;
     font-size: 1.2rem;
     margin-right: 1.2rem;
   }
+}
+@media only screen and (min-width: 320px) {
   .container-menu-nav__nav-three-buttons__button-and-number__button-nav:hover {
     background-color: #F5EDFF;
     cursor: pointer;
   }
-
+}
+@media only screen and (min-width: 320px) {
   .container-menus {
     display: flex;
     flex-direction: column;
@@ -315,6 +396,21 @@ ul {
     height: 39rem;
     margin-bottom: 1rem;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 768px) {
+  .container-menus__two-menus-container {
+    height: 47rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 992px) {
+  .container-menus__two-menus-container {
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 0rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .container-menus__two-menus-container__bloc-nouveau {
     background-color: #99E2D0;
     color: #008766;
@@ -328,12 +424,13 @@ ul {
     width: min-content;
     align-self: flex-end;
     position: relative;
-    top: 3rem;
+    top: 2.5rem;
+    left: 1.5rem;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 481px) {
+@media only screen and (min-width: 320px) and (min-width: 992px) {
   .container-menus__two-menus-container__bloc-nouveau {
-    left: -3%;
+    left: 1.3rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -346,6 +443,19 @@ ul {
     text-decoration: none;
     color: black;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 992px) {
+  .container-menus__two-menus-container__restaurant-link {
+    margin: 2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1824px) {
+  .container-menus__two-menus-container__restaurant-link {
+    width: 45%;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -359,10 +469,29 @@ ul {
     flex-direction: column;
     justify-content: space-between;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 768px) {
+  .container-menus__two-menus-container__box-menu {
+    height: 20rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 2000px) {
+  .container-menus__two-menus-container__box-menu {
+    height: 28rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1824px) {
+  .container-menus__two-menus-container__box-menu {
+    height: 27rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .container-menus__two-menus-container__box-menu:hover {
     cursor: pointer;
     box-shadow: 0px 5px 15px #a3a3a3;
   }
+}
+@media only screen and (min-width: 320px) {
   .container-menus__two-menus-container__box-menu__images {
     width: 100%;
     height: 70%;
@@ -371,6 +500,8 @@ ul {
     -o-object-fit: cover;
     object-fit: cover;
   }
+}
+@media only screen and (min-width: 320px) {
   .container-menus__two-menus-container__box-menu__description__colonne2 .fas:hover {
     font-weight: 900;
     color: #9356dc;
@@ -381,11 +512,15 @@ ul {
     -webkit-text-fill-color: transparent;
     cursor: pointer;
   }
+}
+@media only screen and (min-width: 320px) {
   .container-menus__two-menus-container__box-menu__description__colonne2 .fas {
     font-size: 1.5rem;
     font-weight: 100;
     color: #4F4F4F;
   }
+}
+@media only screen and (min-width: 320px) {
   .container-menus__two-menus-container__box-menu__description {
     height: 30%;
     display: flex;
@@ -416,6 +551,18 @@ ul {
     font-size: 1.2rem;
     letter-spacing: 1px;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 1824px) {
+  footer .footer__title {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  footer .footer__title {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul {
     padding: 0 0 0 1.5rem;
     height: 7.5rem;
@@ -423,23 +570,43 @@ ul {
     flex-direction: column;
     justify-content: space-around;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  footer .footer__ul {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul__list {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     list-style-type: none;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  footer .footer__ul__list {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul__list a {
     color: white;
     text-decoration: none;
   }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul__list:hover {
     text-decoration: underline;
     cursor: pointer;
   }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul__list .fa-utensils {
     margin-right: 1rem;
   }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul__list .fa-hands-helping {
     font-size: 0.8rem;
     margin-right: 0.8rem;
