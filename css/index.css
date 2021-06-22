@@ -81,10 +81,32 @@
     transform: translateY(0);
   }
 }
-body {
-  width: 100%;
-  margin: auto;
-  font-family: "Roboto", sans-serif;
+.button-primary {
+  border: none;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 60px;
+  box-shadow: 0px 5px 20px #a8a8a8;
+}
+.button-primary--gradient {
+  background: linear-gradient(176deg, #FF79DA 5%, #9356DC 100%);
+}
+.button-primary--text {
+  font-size: 1.2rem;
+  color: white;
+}
+@media only screen and (min-width: 1824px) {
+  .button-primary--text {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .button-primary--text {
+    font-size: 1.5rem;
+  }
+}
+.button-primary:hover {
+  cursor: pointer;
+  background: #9356DC;
 }
 
 h1 {
@@ -94,6 +116,26 @@ h1 {
   h1 {
     font-size: 2.5rem;
   }
+}
+
+ul {
+  list-style-type: none;
+}
+@media only screen and (min-width: 1824px) {
+  ul {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  ul {
+    font-size: 1.5rem;
+  }
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
 }
 
 h2 {
@@ -139,20 +181,6 @@ p {
 @media only screen and (min-width: 3000px) {
   p {
     font-size: 1.8rem;
-  }
-}
-
-ul {
-  list-style-type: none;
-}
-@media only screen and (min-width: 1824px) {
-  ul {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  ul {
-    font-size: 1.5rem;
   }
 }
 
@@ -260,41 +288,6 @@ ul {
     margin: 0rem 1.5rem 1.5rem 1.5rem;
   }
 
-  .button-primary {
-    border: none;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-    border-radius: 60px;
-    box-shadow: 0px 5px 20px #a8a8a8;
-  }
-}
-@media only screen and (min-width: 320px) and (min-width: 1824px) {
-  .button-primary {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (min-width: 320px) and (min-width: 3000px) {
-  .button-primary {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (min-width: 320px) {
-  .button-primary--gradient {
-    background: linear-gradient(176deg, #FF79DA 5%, #9356DC 100%);
-  }
-}
-@media only screen and (min-width: 320px) {
-  .button-primary--text {
-    font-size: 1.2rem;
-    color: white;
-  }
-}
-@media only screen and (min-width: 320px) {
-  .button-primary:hover {
-    cursor: pointer;
-    background: #9356DC;
-  }
-}
-@media only screen and (min-width: 320px) {
   .container-menu-nav {
     display: flex;
     flex-direction: column;

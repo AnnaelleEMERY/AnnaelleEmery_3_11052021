@@ -1,5 +1,6 @@
 @import "variables";
 @import "keyframes";
+@import "bases";
 
 body{
     width: 100%;
@@ -7,13 +8,17 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
-    font-family: 'Shrikhand', cursive;
-}
-
 .h1__Menu{
     font-size: 1.8rem;
     margin: 0;
+
+    @media #{$breakpoint-desktop} {
+        font-size: 2rem;
+    }
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 2.5rem;
+    }
 }
 
 .h2__thin-uppercase{
@@ -22,6 +27,10 @@ h1{
     font-weight: 300;
     text-transform: uppercase;
     margin: 0;
+
+    @media #{$breakpoint-desktop} {
+        font-size: 1.5rem;
+    }
 }
 
 .h3__menus{
@@ -32,13 +41,38 @@ h1{
     text-overflow: ellipsis;
     overflow: hidden;
     display: ruby;
+
+    @media #{$breakpoint-desktop} {
+        font-size: 1.4rem;
+    }
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 1.5rem;
+    }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 2rem;
+    }
 }
 
 p{
     font-weight: 200;
     font-size: 1rem;
     margin: 0;
+
+    @media #{$breakpoint-desktop} {
+        font-size: 1.3rem;
+    }
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 1.5rem;
+    }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 1.8rem;
+    }
 }
+
 
 @media only screen and (min-width : 320px) {
 
@@ -116,7 +150,23 @@ p{
             }
         .home-link{
             position: relative;
-            left: -11%;        
+            left: -11%; 
+
+            @media #{$breakpoint-tablet-mid} {
+                left: -30%; 
+            }
+
+            @media #{$breakpoint-desktop} {
+                left: -35%; 
+            }
+
+            @media #{$breakpoint-TV-mid} {
+                left: -40%; 
+            }
+
+            @media #{$breakpoint-TV-max} {
+                left: -43%; 
+            }  
             .fa-arrow-left{
             font-size: 1.5rem;
             color: #353535;
@@ -130,9 +180,23 @@ p{
         .under-header{
             width: 100%;
             margin: 0;
-            @media #{$breakpoint-tablet-min} {
+
+            @media #{$breakpoint-tablet-mid} {
                 display: flex;
                 height: 25rem;
+            }
+
+            @media #{$breakpoint-tablet-max} {
+                height: 30rem;
+            }
+
+            @media #{$breakpoint-TV-min} {
+                display: flex;
+                height: 40rem;
+            }
+
+            @media #{$breakpoint-TV-max} {
+                height: 55rem;
             }
             &__banner-menu{
                 width: 100%;
@@ -191,8 +255,21 @@ p{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: center;
             margin-top: 0.8rem;
             margin-bottom: 3rem;
+
+            @media #{$breakpoint-desktop} {
+                height: 20rem;
+            }
+
+            @media #{$breakpoint-TV-mid} {
+                height: 25rem;
+            }
+
+            @media #{$breakpoint-TV-max} {
+                height: 28rem;
+            }
             &__individual-boxes{
                 display: flex;
                 flex-direction: row;
@@ -201,11 +278,28 @@ p{
                 height: 4.6rem;
                 animation: fadein 1s;
                 animation-delay: 2.9s;
+                width: 100%;
+
+                @media #{$breakpoint-tablet-max} {
+                    width: 95%;
+                }
+
+                @media #{$breakpoint-desktop} {
+                    height: 6rem;
+                }
+
+                @media #{$breakpoint-TV-mid} {
+                    height: 7rem;
+                }
+
+                @media #{$breakpoint-TV-max} {
+                    height: 8rem;
+                }
                 &:hover {
                     & .Menu__boxes__individual-boxes__description-column{
                         cursor: pointer;
                         width: 76%;
-                        @media #{$breakpoint-tablet-min} {
+                        @media #{$breakpoint-tablet-mid} {
                             width: 110%;
                         }
                     }
@@ -217,6 +311,14 @@ p{
                         cursor: pointer;
                         transform: rotate(0turn);
                         font-size: 1.5rem;
+
+                        @media #{$breakpoint-desktop} {
+                            font-size: 1.9rem;
+                        }
+
+                        @media #{$breakpoint-TV-mid} {
+                            font-size: 2.6rem;
+                        }
                     }
                 }
                 &__title{
@@ -265,27 +367,9 @@ p{
                         color: white;
                         font-size: 0rem;  
                         transform: rotate(-1turn); 
-                        transition: all 300ms ease-in-out;                 
+                        transition: all 300ms ease-in-out;   
                     }
                 }
-            }
-        }
-        .button-primary{
-            border: none;
-            padding: 1rem 1.5rem 1rem 1.5rem;
-            border-radius: 60px;
-            box-shadow: 0px 5px 20px $button-box-shadox;
-            &--gradient{
-                background: $secondary;
-                background: linear-gradient(176deg, $secondary 5%, $primary 100%);
-            }
-            &--text{
-                font-size: 1.2rem;
-                color: white;
-            }
-            &:hover{
-                cursor: pointer;
-                background: $primary;
             }
         }
     }
@@ -302,6 +386,14 @@ p{
             padding-left: 1.5rem;
             font-size: 1.2rem;
             letter-spacing: 1px;
+
+            @media #{$breakpoint-TV-min} {
+                font-size: 1.8rem;
+            }
+    
+            @media #{$breakpoint-TV-max} {
+                font-size: 2.2rem;
+            }
         }
         .footer__ul{
             padding: 0 0 0 1.5rem;
@@ -310,9 +402,17 @@ p{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
+            @media #{$breakpoint-TV-max} {
+                height: 100%;
+            }
         &__list{
             width: max-content;
             list-style-type: none; 
+
+            @media #{$breakpoint-TV-max} {
+                margin-bottom: 1rem;
+            }
         & a {
             color: white;
             text-decoration: none;

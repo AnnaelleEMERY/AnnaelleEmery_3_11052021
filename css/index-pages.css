@@ -81,19 +81,76 @@
     transform: translateY(0);
   }
 }
+.button-primary {
+  border: none;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 60px;
+  box-shadow: 0px 5px 20px #a8a8a8;
+}
+.button-primary--gradient {
+  background: linear-gradient(176deg, #FF79DA 5%, #9356DC 100%);
+}
+.button-primary--text {
+  font-size: 1.2rem;
+  color: white;
+}
+@media only screen and (min-width: 1824px) {
+  .button-primary--text {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .button-primary--text {
+    font-size: 1.5rem;
+  }
+}
+.button-primary:hover {
+  cursor: pointer;
+  background: #9356DC;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+@media only screen and (min-width: 1824px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+@media only screen and (min-width: 1824px) {
+  ul {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  ul {
+    font-size: 1.5rem;
+  }
+}
+
 body {
   width: 100%;
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-family: "Shrikhand", cursive;
-}
-
 .h1__Menu {
   font-size: 1.8rem;
   margin: 0;
+}
+@media only screen and (min-width: 1224px) {
+  .h1__Menu {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .h1__Menu {
+    font-size: 2.5rem;
+  }
 }
 
 .h2__thin-uppercase {
@@ -102,6 +159,11 @@ h1 {
   font-weight: 300;
   text-transform: uppercase;
   margin: 0;
+}
+@media only screen and (min-width: 1224px) {
+  .h2__thin-uppercase {
+    font-size: 1.5rem;
+  }
 }
 
 .h3__menus {
@@ -113,11 +175,41 @@ h1 {
   overflow: hidden;
   display: ruby;
 }
+@media only screen and (min-width: 1224px) {
+  .h3__menus {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .h3__menus {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .h3__menus {
+    font-size: 2rem;
+  }
+}
 
 p {
   font-weight: 200;
   font-size: 1rem;
   margin: 0;
+}
+@media only screen and (min-width: 1224px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  p {
+    font-size: 1.8rem;
+  }
 }
 
 @media only screen and (min-width: 320px) {
@@ -196,11 +288,34 @@ p {
     position: relative;
     left: -11%;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 768px) {
+  header .home-link {
+    left: -30%;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1224px) {
+  header .home-link {
+    left: -35%;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 2000px) {
+  header .home-link {
+    left: -40%;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  header .home-link {
+    left: -43%;
+  }
+}
+@media only screen and (min-width: 320px) {
   header .home-link .fa-arrow-left {
     font-size: 1.5rem;
     color: #353535;
   }
-
+}
+@media only screen and (min-width: 320px) {
   .container {
     background-color: #F6F6F6;
     height: 100%;
@@ -210,10 +325,26 @@ p {
     margin: 0;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 481px) {
+@media only screen and (min-width: 320px) and (min-width: 768px) {
   .container .under-header {
     display: flex;
     height: 25rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 992px) {
+  .container .under-header {
+    height: 30rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1824px) {
+  .container .under-header {
+    display: flex;
+    height: 40rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  .container .under-header {
+    height: 55rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -274,9 +405,27 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin-top: 0.8rem;
     margin-bottom: 3rem;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 1224px) {
+  .Menu__boxes {
+    height: 20rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 2000px) {
+  .Menu__boxes {
+    height: 25rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  .Menu__boxes {
+    height: 28rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .Menu__boxes__individual-boxes {
     display: flex;
     flex-direction: row;
@@ -285,13 +434,36 @@ p {
     height: 4.6rem;
     animation: fadein 1s;
     animation-delay: 2.9s;
+    width: 100%;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 992px) {
+  .Menu__boxes__individual-boxes {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1224px) {
+  .Menu__boxes__individual-boxes {
+    height: 6rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 2000px) {
+  .Menu__boxes__individual-boxes {
+    height: 7rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  .Menu__boxes__individual-boxes {
+    height: 8rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__description-column {
     cursor: pointer;
     width: 76%;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 481px) {
+@media only screen and (min-width: 320px) and (min-width: 768px) {
   .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__description-column {
     width: 110%;
   }
@@ -307,6 +479,16 @@ p {
     cursor: pointer;
     transform: rotate(0turn);
     font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1224px) {
+  .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__select-button .fa-check-circle {
+    font-size: 1.9rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 2000px) {
+  .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__select-button .fa-check-circle {
+    font-size: 2.6rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -367,26 +549,6 @@ p {
   }
 }
 @media only screen and (min-width: 320px) {
-  .Menu .button-primary {
-    border: none;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-    border-radius: 60px;
-    box-shadow: 0px 5px 20px #a8a8a8;
-  }
-  .Menu .button-primary--gradient {
-    background: #FF79DA;
-    background: linear-gradient(176deg, #FF79DA 5%, #9356DC 100%);
-  }
-  .Menu .button-primary--text {
-    font-size: 1.2rem;
-    color: white;
-  }
-  .Menu .button-primary:hover {
-    cursor: pointer;
-    background: #9356DC;
-  }
-}
-@media only screen and (min-width: 320px) {
   footer {
     background-color: #353535;
     width: 100%;
@@ -401,6 +563,18 @@ p {
     font-size: 1.2rem;
     letter-spacing: 1px;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 1824px) {
+  footer .footer__title {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  footer .footer__title {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul {
     padding: 0 0 0 1.5rem;
     height: 7.5rem;
@@ -408,21 +582,41 @@ p {
     flex-direction: column;
     justify-content: space-around;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  footer .footer__ul {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul__list {
     width: max-content;
     list-style-type: none;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  footer .footer__ul__list {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul__list a {
     color: white;
     text-decoration: none;
   }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul__list:hover {
     text-decoration: underline;
     cursor: pointer;
   }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul__list .fa-utensils {
     margin-right: 1rem;
   }
+}
+@media only screen and (min-width: 320px) {
   footer .footer__ul__list .fa-hands-helping {
     font-size: 0.8rem;
     margin-right: 0.8rem;
