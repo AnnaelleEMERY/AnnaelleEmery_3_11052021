@@ -1,0 +1,10 @@
+@mixin Gradient {
+    font-weight: 900;
+color: rgb(147,86,220);
+display: block;
+background: -webkit-linear-gradient($primary,$secondary);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+cursor: pointer;
+}

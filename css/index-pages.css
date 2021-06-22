@@ -94,7 +94,7 @@
   font-size: 1.2rem;
   color: white;
 }
-@media only screen and (min-width: 1824px) {
+@media only screen and (min-width: 1920px) {
   .button-primary--text {
     font-size: 1.4rem;
   }
@@ -112,7 +112,7 @@
 h1 {
   font-family: "Shrikhand", cursive;
 }
-@media only screen and (min-width: 1824px) {
+@media only screen and (min-width: 1920px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -121,7 +121,7 @@ h1 {
 ul {
   list-style-type: none;
 }
-@media only screen and (min-width: 1824px) {
+@media only screen and (min-width: 1920px) {
   ul {
     font-size: 1.3rem;
   }
@@ -147,7 +147,7 @@ body {
     font-size: 2rem;
   }
 }
-@media only screen and (min-width: 1824px) {
+@media only screen and (min-width: 1920px) {
   .h1__Menu {
     font-size: 2.5rem;
   }
@@ -180,7 +180,7 @@ body {
     font-size: 1.4rem;
   }
 }
-@media only screen and (min-width: 1824px) {
+@media only screen and (min-width: 1920px) {
   .h3__menus {
     font-size: 1.5rem;
   }
@@ -201,7 +201,7 @@ p {
     font-size: 1.3rem;
   }
 }
-@media only screen and (min-width: 1824px) {
+@media only screen and (min-width: 1920px) {
   p {
     font-size: 1.5rem;
   }
@@ -336,7 +336,7 @@ p {
     height: 30rem;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 1824px) {
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
   .container .under-header {
     display: flex;
     height: 40rem;
@@ -384,6 +384,8 @@ p {
   }
   .Menu__title-and-heart .fas:hover {
     font-weight: 900;
+    color: #9356dc;
+    display: block;
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
     -webkit-background-clip: text;
@@ -483,7 +485,7 @@ p {
     width: 20%;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 1824px) {
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
   .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__select-button {
     width: 15%;
   }
@@ -578,7 +580,7 @@ p {
     letter-spacing: 1px;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 1824px) {
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
   footer .footer__title {
     font-size: 1.8rem;
   }

@@ -1,6 +1,7 @@
 @import "variables";
 @import "keyframes";
 @import "bases";
+@import "mixin";
 
 body{
     width: 100%;
@@ -232,12 +233,7 @@ p{
             color: $icon;
             margin-right: 1rem;
             &:hover{
-                font-weight: 900;
-                background: -webkit-linear-gradient($primary,$secondary);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                cursor: pointer;
+                @include Gradient;
             }
         }
         &__starter-dish-dessert{
