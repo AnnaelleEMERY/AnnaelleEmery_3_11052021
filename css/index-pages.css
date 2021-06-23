@@ -472,7 +472,12 @@ p {
 @media only screen and (min-width: 320px) {
   .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__description-column {
     cursor: pointer;
-    width: 76%;
+    width: 77%;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 481px) {
+  .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__description-column {
+    width: 80%;
   }
 }
 @media only screen and (min-width: 320px) and (min-width: 768px) {

@@ -304,7 +304,11 @@ p{
                 &:hover {
                     & .Menu__boxes__individual-boxes__description-column{
                         cursor: pointer;
-                        width: 76%;
+                        width: 77%;
+
+                        @media #{$breakpoint-tablet-min} {
+                            width: 80%;
+                        }
                         @media #{$breakpoint-tablet-mid} {
                             width: 110%;
                         }
