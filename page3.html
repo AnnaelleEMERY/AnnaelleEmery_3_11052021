@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width"> 
-	<title>OhMyFood - A la française</title>
-    <link rel="stylesheet" href=".public/css/index.css" />
+	<title>OhMyFood - À la française</title>
+    <link rel="stylesheet" href="css/index-pages.css" />
     <script src="https://kit.fontawesome.com/97fdc17419.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
@@ -12,15 +12,196 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
 </head>
 <body>
+<!-- loading spinner -->
+<div class="load-div">
+    <div class="loader loader-circles"></div>
+</div>
+<!-- fin loading spinner -->
     <header>
-        
-        <h1 class="header__titre">ohmyfood</h1>
+        <a class="home-link" href="index.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="header__title">ohmyfood</h1>
     </header>
-    <main>
+    <main class="container">
+        <figure class="under-header">
+            <img class="under-header__banner-menu" src="Maquettes_Ohmyfood/images/restaurants/A_la_française.jpg"  
+            alt="À la française"/>
+        </figure>
 
-    </main>
+        <div class="Menu">
+            <div class="Menu__title-and-heart">
+                <h1 class="h1__Menu">À la française</h1>
+                <i class="fas fa-heart"></i>
+            </div>
+
+            <div class="Menu__starter-dish-dessert">
+                <div class="Menu__starter-dish-dessert__title-and-underline">
+                    <h2 class="h2__thin-uppercase">Entrées</h2>
+                </div>
+
+                <div class="Menu__boxes">
+                    <div class="Menu__boxes__individual-boxes">
+                        <div class="Menu__boxes__individual-boxes__description-column">
+                            <div class="Menu__boxes__individual-boxes__title">
+                                <h3 class="h3__menus">Tartare de poulpe acidulé</h3>
+                            </div>
+                            <div class="Menu__boxes__individual-boxes__description-and-price">
+                                <p class="Menu__boxes__individual-boxes__description-and-price__description">Aux zests d'orange</p>
+                                <p class="Menu__boxes__individual-boxes__description-and-price__price">25€</p>
+                            </div>
+                        </div>
+                        <div class="Menu__boxes__individual-boxes__select-button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="Menu__boxes__individual-boxes">
+                        <div class="Menu__boxes__individual-boxes__description-column">
+                            <div class="Menu__boxes__individual-boxes__title">
+                                <h3 class="h3__menus">Velouté de légumes d'antan</h3>
+                            </div>
+                            <div class="Menu__boxes__individual-boxes__description-and-price">
+                                <p class="Menu__boxes__individual-boxes__description-and-price__description">Carotte, panais, topinambour</p>
+                                <p class="Menu__boxes__individual-boxes__description-and-price__price">35€</p>
+                            </div>
+                        </div>
+                        <div class="Menu__boxes__individual-boxes__select-button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="Menu__boxes__individual-boxes">
+                        <div class="Menu__boxes__individual-boxes__description-column">
+                            <div class="Menu__boxes__individual-boxes__title">
+                                <h3 class="h3__menus">Soupe à l'oignon</h3>
+                            </div>
+                            <div class="Menu__boxes__individual-boxes__description-and-price">
+                                <p class="Menu__boxes__individual-boxes__description-and-price__description">Révisitée</p>
+                                <p class="Menu__boxes__individual-boxes__description-and-price__price">20€</p>
+                            </div>
+                        </div>
+                        <div class="Menu__boxes__individual-boxes__select-button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Menu__starter-dish-dessert__title-and-underline">
+                    <h2 class="h2__thin-uppercase" >Plats</h2>
+                </div>
+
+                <div class="Menu__boxes">
+                    <div class="Menu__boxes__individual-boxes">
+                        <div class="Menu__boxes__individual-boxes__description-column">
+                            <div class="Menu__boxes__individual-boxes__title">
+                                <h3 class="h3__menus">Coquilles Saint-Jacques</h3>
+                            </div>
+                            <div class="Menu__boxes__individual-boxes__description-and-price">
+                                <p class="Menu__boxes__individual-boxes__description-and-price__description">Accompagnées d'une purée de panais</p>
+                                <p class="Menu__boxes__individual-boxes__description-and-price__price">40€</p>
+                            </div>
+                        </div>
+                        <div class="Menu__boxes__individual-boxes__select-button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="Menu__boxes__individual-boxes">
+                        <div class="Menu__boxes__individual-boxes__description-column">
+                            <div class="Menu__boxes__individual-boxes__title">
+                                <h3 class="h3__menus">Magret de canard</h3>
+                            </div>
+                            <div class="Menu__boxes__individual-boxes__description-and-price">
+                                <p class="Menu__boxes__individual-boxes__description-and-price__description">Et parmentier de pommes de terres</p>
+                                <p class="Menu__boxes__individual-boxes__description-and-price__price">35€</p>
+                            </div>
+                        </div>
+                        <div class="Menu__boxes__individual-boxes__select-button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="Menu__boxes__individual-boxes">
+                        <div class="Menu__boxes__individual-boxes__description-column">
+                            <div class="Menu__boxes__individual-boxes__title">
+                                <h3 class="h3__menus">Pigeonneau d'Ile-et-Vilaine</h3>
+                            </div>
+                            <div class="Menu__boxes__individual-boxes__description-and-price">
+                                <p class="Menu__boxes__individual-boxes__description-and-price__description">Sur son lit de gnocchis auc légumes</p>
+                                <p class="Menu__boxes__individual-boxes__description-and-price__price">44€</p>
+                            </div>
+                        </div>
+                        <div class="Menu__boxes__individual-boxes__select-button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Menu__starter-dish-dessert__title-and-underline">
+                    <h2 class="h2__thin-uppercase">Desserts</h2>
+                </div>
+
+                <div class="Menu__boxes">
+                    <div class="Menu__boxes__individual-boxes">
+                        <div class="Menu__boxes__individual-boxes__description-column">
+                            <div class="Menu__boxes__individual-boxes__title">
+                                <h3 class="h3__menus">Pétales de violettes glacés</h3>
+                            </div>
+                            <div class="Menu__boxes__individual-boxes__description-and-price">
+                                <p class="Menu__boxes__individual-boxes__description-and-price__description">Et purée de noisettes</p>
+                                <p class="Menu__boxes__individual-boxes__description-and-price__price">18€</p>
+                            </div>
+                        </div>
+                        <div class="Menu__boxes__individual-boxes__select-button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="Menu__boxes__individual-boxes">
+                        <div class="Menu__boxes__individual-boxes__description-column">
+                            <div class="Menu__boxes__individual-boxes__title">
+                                <h3 class="h3__menus">Fondant au chocolat</h3>
+                            </div>
+                            <div class="Menu__boxes__individual-boxes__description-and-price">
+                                <p class="Menu__boxes__individual-boxes__description-and-price__description">Revisité</p>
+                                <p class="Menu__boxes__individual-boxes__description-and-price__price">22€</p>
+                            </div>
+                        </div>
+                        <div class="Menu__boxes__individual-boxes__select-button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="Menu__boxes__individual-boxes">
+                        <div class="Menu__boxes__individual-boxes__description-column">
+                            <div class="Menu__boxes__individual-boxes__title">
+                                <h3 class="h3__menus">Millefeuille croustillant</h3>
+                            </div>
+                            <div class="Menu__boxes__individual-boxes__description-and-price">
+                                <p class="Menu__boxes__individual-boxes__description-and-price__description">Myrtilles et pâte d'amande</p>
+                                <p class="Menu__boxes__individual-boxes__description-and-price__price">23€</p>
+                            </div>
+                        </div>
+                        <div class="Menu__boxes__individual-boxes__select-button">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="button-primary button-primary--gradient"><span class="button-primary--text">Commander</span></button>
+        </div>
+        
     <footer>
-
+        <h1 class="footer__title">ohmyfood</h1>
+        <ul class="footer__ul">
+            <li class="footer__ul__list"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+            <li class="footer__ul__list"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+            <li class="footer__ul__list">Mentions légales</li>
+            <li class="footer__ul__list"><a href="maito:annaelleemery512@gmail.com"  target="_blank">Contact</a></li>
+        </ul>
     </footer>
+</main>
 </body>
 </html>
