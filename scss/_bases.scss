@@ -22,7 +22,7 @@
     &:hover{
         cursor: pointer;
         background: linear-gradient(176deg, lighten($secondary, 5%) 0%, lighten($primary, 5%) 185%);
-        box-shadow: 0px 1px 20px darken($button-box-shadox, 10%);
+        box-shadow: 0px 1px 21px darken($button-box-shadox, 10%);
     }
 }
 
