@@ -245,7 +245,7 @@ p {
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
   }
-  .loader-circles::after {
+  .loader-circles::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -258,7 +258,7 @@ p {
     -webkit-animation: spin 10s linear infinite;
     animation: spin 10s linear infinite;
   }
-  .loader-circles::before {
+  .loader-circles::after {
     content: "";
     position: absolute;
     top: 13px;

@@ -108,7 +108,7 @@ p{
     border-top-color: $primary;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
-    &::after{
+    &::before{
         content: "";
         position: absolute;
         top: 5px;
@@ -121,7 +121,7 @@ p{
         -webkit-animation: spin 10s linear infinite;
         animation: spin 10s linear infinite;
     }
-    &::before{
+    &::after{
         content: "";
         position: absolute;
         top: 13px;
