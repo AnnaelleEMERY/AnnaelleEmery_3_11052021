@@ -257,7 +257,13 @@ p {
   .header__title {
     margin: 0.5rem;
   }
-
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  .header__title {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .container-under-header {
     background-color: #F6F6F6;
   }
@@ -288,7 +294,8 @@ p {
   .container-under-header__reserve__text-discover {
     margin: 0rem 1.5rem 1.5rem 1.5rem;
   }
-
+}
+@media only screen and (min-width: 320px) {
   .container-menu-nav {
     display: flex;
     flex-direction: column;

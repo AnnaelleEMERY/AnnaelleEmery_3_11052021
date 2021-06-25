@@ -119,6 +119,10 @@ header{
 
 .header__title{
         margin: 0.5rem;
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 3rem;
+    }
 }
 
 .container-under-header{

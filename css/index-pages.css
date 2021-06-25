@@ -153,6 +153,11 @@ ul {
     font-size: 2.5rem;
   }
 }
+@media only screen and (min-width: 3000px) {
+  .h1__Menu {
+    font-size: 3rem;
+  }
+}
 
 .h2__thin-uppercase {
   font-family: "Roboto", sans-serif;
@@ -164,6 +169,11 @@ ul {
 @media only screen and (min-width: 1224px) {
   .h2__thin-uppercase {
     font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .h2__thin-uppercase {
+    font-size: 2rem;
   }
 }
 
@@ -285,6 +295,13 @@ p {
   header .header__title {
     margin: 0.5rem;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  header .header__title {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   header .home-link {
     position: relative;
     left: -11%;
@@ -383,6 +400,18 @@ p {
     color: #7E7E7E;
     margin-right: 1rem;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
+  .Menu__title-and-heart .fas {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  .Menu__title-and-heart .fas {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .Menu__title-and-heart .fas:hover {
     font-weight: 900;
     color: #9356dc;
@@ -393,6 +422,8 @@ p {
     -webkit-text-fill-color: transparent;
     cursor: pointer;
   }
+}
+@media only screen and (min-width: 320px) {
   .Menu__starter-dish-dessert {
     width: 93%;
     margin-bottom: 1rem;
@@ -403,6 +434,8 @@ p {
     padding-bottom: 0.2rem;
     width: 3.2rem;
   }
+}
+@media only screen and (min-width: 320px) {
   .Menu__boxes {
     height: 100%;
     display: flex;
@@ -593,11 +626,13 @@ p {
 @media only screen and (min-width: 320px) and (min-width: 1920px) {
   footer .footer__title {
     font-size: 1.8rem;
+    margin-bottom: 3rem;
   }
 }
 @media only screen and (min-width: 320px) and (min-width: 3000px) {
   footer .footer__title {
     font-size: 2.2rem;
+    margin-bottom: 1rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -607,6 +642,11 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
+  footer .footer__ul {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 320px) and (min-width: 3000px) {
@@ -620,7 +660,7 @@ p {
     list-style-type: none;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 3000px) {
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
   footer .footer__ul__list {
     margin-bottom: 1rem;
   }

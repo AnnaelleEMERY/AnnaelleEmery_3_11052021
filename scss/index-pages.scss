@@ -14,6 +14,10 @@
     @media #{$breakpoint-TV-min} {
         font-size: 2.5rem;
     }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 3rem;
+    }
 }
 
 .h2__thin-uppercase{
@@ -25,6 +29,10 @@
 
     @media #{$breakpoint-desktop} {
         font-size: 1.5rem;
+    }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 2rem;
     }
 }
 
@@ -142,6 +150,10 @@ p{
         z-index: 1;
         .header__title{
             margin: 0.5rem;
+
+            @media #{$breakpoint-TV-max} {
+                font-size: 3rem;
+            }
             }
         .home-link{
             position: relative;
@@ -226,6 +238,14 @@ p{
             font-weight: 100;
             color: $icon;
             margin-right: 1rem;
+
+            @media #{$breakpoint-TV-min} {
+                font-size: 2rem;
+            }
+
+            @media #{$breakpoint-TV-max} {
+                font-size: 2.2rem;
+            }
             &:hover{
                 @include Gradient;
             }
@@ -400,10 +420,12 @@ p{
 
             @media #{$breakpoint-TV-min} {
                 font-size: 1.8rem;
+                margin-bottom: 3rem;
             }
     
             @media #{$breakpoint-TV-max} {
                 font-size: 2.2rem;
+                margin-bottom: 1rem;
             }
         }
         .footer__ul{
@@ -414,6 +436,10 @@ p{
             flex-direction: column;
             justify-content: space-around;
 
+            @media #{$breakpoint-TV-min} {
+                font-size: 1.5rem;
+            }
+
             @media #{$breakpoint-TV-max} {
                 height: 100%;
             }
@@ -421,7 +447,7 @@ p{
             width: max-content;
             list-style-type: none; 
 
-            @media #{$breakpoint-TV-max} {
+            @media #{$breakpoint-TV-min} {
                 margin-bottom: 1rem;
             }
         & a {
