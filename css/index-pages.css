@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* keyframes du loading spinner */
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -13,22 +14,6 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spinreverse {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-@keyframes spinreverse {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
   }
 }
 @-webkit-keyframes disappear {
@@ -61,6 +46,7 @@
     display: none;
   }
 }
+/* keyframe apparition des plats en décalé */
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;
@@ -397,13 +383,13 @@ p {
   .Menu__title-and-heart .fas {
     font-size: 1.5rem;
     font-weight: 100;
-    color: #7E7E7E;
-    margin-right: 1rem;
+    color: #4F4F4F;
   }
 }
 @media only screen and (min-width: 320px) and (min-width: 1920px) {
   .Menu__title-and-heart .fas {
     font-size: 2rem;
+    margin-right: 2rem;
   }
 }
 @media only screen and (min-width: 320px) and (min-width: 3000px) {

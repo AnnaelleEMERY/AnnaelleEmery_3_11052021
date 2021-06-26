@@ -2,6 +2,7 @@
 @import "keyframes";
 @import "bases";
 @import "mixin";
+@import "components";
 
 .h1__Menu{
     font-size: 1.8rem;
@@ -173,18 +174,8 @@ p{
             align-items: center;
         }
         &__title-and-heart .fas{
-            font-size: 1.5rem;
-            font-weight: 100;
-            color: $icon;
-            margin-right: 1rem;
-
-            @media #{$breakpoint-TV-min} {
-                font-size: 2rem;
-            }
-
-            @media #{$breakpoint-TV-max} {
-                font-size: 2.2rem;
-            }
+            @include heart;
+            
             &:hover{
                 @include Gradient;
             }
