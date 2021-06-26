@@ -1,3 +1,29 @@
+body{
+    width: 100%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 2.5rem;
+    }
+}
+
+ul{
+    list-style-type: none;
+
+    @media #{$breakpoint-TV-min} {
+        font-size: 1.3rem;
+    }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 1.5rem;
+    }
+}
+
 .button-primary{
     border: none;
     padding: 1rem 1.5rem 1rem 1.5rem;
@@ -26,29 +52,63 @@
     }
 }
 
-body{
+/* loader double cercle */
+
+.load-div {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: auto;
-    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: forwards disappear;
+    animation: forwards disappear;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
 }
 
-h1{
-    font-family: 'Shrikhand', cursive;
+.loader{
+    width: 4rem;
+    height: 4rem;
+    display:inline-block;
+}
 
-    @media #{$breakpoint-TV-min} {
-        font-size: 2.5rem;
+.loader-circles {
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: $primary;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border: 3px solid transparent;
+        border-top-color: $secondary;
+        border-radius: 50%;
+        -webkit-animation: spin 10s linear infinite;
+        animation: spin 10s linear infinite;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        right: 13px;
+        bottom: 13px;
+        border: 3px solid transparent;
+        border-top-color: lighten($secondary, 10%);
+        border-radius: 50%;
+        -webkit-animation: spin 5s linear infinite;
+        animation: spin 5s linear infinite;
     }
 }
 
-ul{
-    list-style-type: none;
-
-    @media #{$breakpoint-TV-min} {
-        font-size: 1.3rem;
-    }
-
-    @media #{$breakpoint-TV-max} {
-        font-size: 1.5rem;
-    }
-}
-
+/* fin loader double cercle */
