@@ -13,11 +13,11 @@
     }
 
     @media #{$breakpoint-TV-min} {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     @media #{$breakpoint-TV-max} {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
@@ -32,8 +32,12 @@
         font-size: 1.5rem;
     }
 
-    @media #{$breakpoint-TV-max} {
+    @media #{$breakpoint-TV-min} {
         font-size: 2rem;
+    }
+
+    @media #{$breakpoint-TV-max} {
+        font-size: 2.4rem;
     }
 }
 
@@ -51,11 +55,11 @@
     }
 
     @media #{$breakpoint-TV-min} {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     @media #{$breakpoint-TV-max} {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -69,11 +73,11 @@ p{
     }
 
     @media #{$breakpoint-TV-min} {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     @media #{$breakpoint-TV-max} {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -91,8 +95,12 @@ p{
         .header__title{
             margin: 0.5rem;
 
+            @media #{$breakpoint-TV-min} {
+                font-size: 3.3rem;
+            }
+
             @media #{$breakpoint-TV-max} {
-                font-size: 3rem;
+                font-size: 4rem;
             }
             }
         .home-link{
@@ -107,16 +115,28 @@ p{
                 left: -35%; 
             }
 
+            @media #{$breakpoint-TV-min} {
+                font-size: 2rem;
+            }
+
             @media #{$breakpoint-TV-mid} {
-                left: -40%; 
+                left: -39%; 
             }
 
             @media #{$breakpoint-TV-max} {
-                left: -43%; 
+                left: -42%; 
             }  
             .fa-arrow-left{
             font-size: 1.5rem;
             color: #353535;
+            }
+
+            @media #{$breakpoint-TV-min} {
+                font-size: 2.5rem;
+            }
+
+            @media #{$breakpoint-TV-max} {
+                font-size: 2.5rem;
             }
         }
     }
@@ -203,7 +223,7 @@ p{
                 height: 20rem;
             }
 
-            @media #{$breakpoint-TV-mid} {
+            @media #{$breakpoint-TV-min} {
                 height: 25rem;
             }
 
@@ -242,11 +262,7 @@ p{
                     height: 6rem;
                 }
 
-                @media #{$breakpoint-TV-mid} {
-                    height: 7rem;
-                }
-
-                @media #{$breakpoint-TV-max} {
+                @media #{$breakpoint-TV-min} {
                     height: 8rem;
                 }
                 &:hover {
@@ -264,6 +280,7 @@ p{
                     & .Menu__boxes__individual-boxes__select-button {
                         cursor: pointer;
                         width: 20%;
+
                         @media #{$breakpoint-TV-min} {
                             width: 15%;
                         }
@@ -277,7 +294,7 @@ p{
                             font-size: 1.9rem;
                         }
 
-                        @media #{$breakpoint-TV-mid} {
+                        @media #{$breakpoint-TV-min} {
                             font-size: 2.6rem;
                         }
                     }
@@ -341,16 +358,23 @@ p{
         margin: 0;
         border: 1px solid #353535;
         color: white;
-        padding-top: 0.5rem;
         padding-bottom: 1rem;
+
         .footer__title{
             padding-left: 1.5rem;
             font-size: 1.2rem;
             letter-spacing: 1px;
 
-            @media #{$breakpoint-TV-min} {
+            @media #{$breakpoint-desktop} {
                 font-size: 1.8rem;
+                text-align: center;
+                padding: 0;
+                margin-top: 0.5rem;
+            }
+
+            @media #{$breakpoint-TV-min} {
                 margin-bottom: 3rem;
+                font-size: 2.2rem;
             }
     
             @media #{$breakpoint-TV-max} {
@@ -360,25 +384,29 @@ p{
         }
         .footer__ul{
             padding: 0 0 0 1.5rem;
-            height: 7.5rem;
         
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
+            @media #{$breakpoint-desktop} {
+                flex-direction: row;
+            }
+        &__list{
+            width: max-content;
+            list-style-type: none; 
+            margin-bottom: 0.5rem;
+
+            @media #{$breakpoint-TV-min} {
+                margin-bottom: 1rem;
+            }
 
             @media #{$breakpoint-TV-min} {
                 font-size: 1.5rem;
             }
 
             @media #{$breakpoint-TV-max} {
-                height: 100%;
-            }
-        &__list{
-            width: max-content;
-            list-style-type: none; 
-
-            @media #{$breakpoint-TV-min} {
-                margin-bottom: 1rem;
+                font-size: 1.8rem;
             }
         & a {
             color: white;
