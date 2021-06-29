@@ -114,11 +114,6 @@ ul {
   font-size: 1.2rem;
   color: white;
 }
-@media only screen and (min-width: 1920px) {
-  .button-primary--text {
-    font-size: 1.8rem;
-  }
-}
 @media only screen and (min-width: 3000px) {
   .button-primary--text {
     font-size: 2.2rem;
@@ -262,12 +257,7 @@ p {
   font-size: 1rem;
   margin: 0;
 }
-@media only screen and (min-width: 1280px) {
-  p {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 2000px) {
   p {
     font-size: 1.8rem;
   }

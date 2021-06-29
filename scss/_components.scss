@@ -15,10 +15,6 @@
         font-size: 1.2rem;
         color: white;
 
-        @media #{$breakpoint-TV-min} {
-            font-size: 1.8rem;
-        }
-
         @media #{$breakpoint-TV-max} {
             font-size: 2.2rem;
         }

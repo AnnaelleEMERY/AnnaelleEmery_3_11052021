@@ -68,11 +68,7 @@ p{
     font-size: 1rem;
     margin: 0;
 
-    @media #{$breakpoint-desktop} {
-        font-size: 1.3rem;
-    }
-
-    @media #{$breakpoint-TV-min} {
+    @media #{$breakpoint-TV-mid} {
         font-size: 1.8rem;
     }
 
