@@ -24,3 +24,72 @@ ul{
     }
 }
 
+footer{
+    background-color: #353535;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #353535;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    .footer__title{
+        padding-left: 1.5rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+
+        @media #{$breakpoint-desktop} {
+            text-align: center;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        @media #{$breakpoint-TV-mid} {
+            margin-bottom: 3rem;
+        }
+    
+        @media #{$breakpoint-TV-max} {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .footer__ul{
+        padding: 0 0 0 1.5rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        @media #{$breakpoint-desktop} {
+            flex-direction: row;
+        }
+
+        @media #{$breakpoint-TV-max} {
+            height: 100%;
+        }
+    &__list{
+        width: max-content;
+        list-style-type: none;
+        margin-bottom: 0.5rem;
+
+        @media #{$breakpoint-TV-mid} {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .fa-utensils{
+        margin-right: 1rem;
+    }
+    .fa-hands-helping{
+        font-size: 0.8rem;
+        margin-right: 0.8rem;
+    }
+    }
+    }
+}

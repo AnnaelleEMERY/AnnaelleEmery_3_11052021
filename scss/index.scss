@@ -44,7 +44,6 @@ p{
     }
 }
 
-
 @media #{$breakpoint-phone} {
 
 header{
@@ -59,9 +58,9 @@ header{
 .header__title{
         margin: 0.5rem;
 
-        @media #{$breakpoint-TV-min} {
-            font-size: 3.3rem;
-        }
+    @media #{$breakpoint-TV-max} {
+        font-size: 3rem;
+    }
 }
 
 .container-under-header{
@@ -108,6 +107,12 @@ header{
         height: 18rem;
         margin-bottom: 3rem;
         margin-top: -1.5rem;
+
+        @media #{$breakpoint-desktop} {
+            flex-direction: row;
+            align-items: center;
+            height: 12rem;
+        }
     &__button-and-number{
         display: flex;
         flex-direction: row;
@@ -125,6 +130,11 @@ header{
         
         position: relative;
         z-index: 1;
+
+        @media #{$breakpoint-TV-max} {
+            font-size: 1.2rem;
+            padding: 0.35rem 0.7rem;
+        }
     }
     &__button-nav{
         width: 85%;
@@ -148,10 +158,11 @@ header{
             width: 70%;
         }
         @media #{$breakpoint-TV-min} {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
         @media #{$breakpoint-TV-max} {
-            font-size: 1.4rem;
+            font-size: 1.7rem;
+            height: 5.5rem;
         }
         .fas{
             color: #7E7E7E;
@@ -219,6 +230,10 @@ header{
                     left: 1.3rem;
                 }
 
+                @media #{$breakpoint-TV-max} {
+                    top: 3.5rem;
+                    font-size: 1.5rem;
+                }
                 &--none{
                     display: none;
                 }
@@ -253,12 +268,16 @@ header{
                 height: 20rem;
             }
 
+            @media #{$breakpoint-TV-min} {
+                height: 26rem;
+            }
+
             @media #{$breakpoint-TV-mid} {
                 height: 28rem;
             }
 
-            @media #{$breakpoint-TV-min} {
-                height: 27rem;
+            @media #{$breakpoint-TV-max} {
+                height: 35rem;
             }
 
             &:hover {
@@ -296,66 +315,6 @@ header{
             }
             }
         }
-    }
-
-footer{
-    background-color: $footer-background-color;
-    margin: 0;
-    border: 1px solid $footer-background-color;
-    color: white;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
-    .footer__title{
-        padding-left: 1.5rem;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-
-        @media #{$breakpoint-TV-min} {
-            font-size: 1.8rem;
-        }
-
-        @media #{$breakpoint-TV-max} {
-            font-size: 2.2rem;
-        }
-    }
-    .footer__ul{
-        padding: 0 0 0 1.5rem;
-        height: 7.5rem;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-
-        @media #{$breakpoint-TV-max} {
-            height: 100%;
-        }
-
-        &__list{
-            width: -webkit-max-content;
-            width: -moz-max-content;
-            width: max-content;
-            list-style-type: none; 
-
-            @media #{$breakpoint-TV-max} {
-                margin-bottom: 1rem;
-            }
-        & a {
-            color: white;
-            text-decoration: none;
-        }
-        &:hover{
-            text-decoration: underline;
-            cursor: pointer;
-        }
-        .fa-utensils{
-            margin-right: 1rem;
-        }
-        .fa-hands-helping{
-            font-size: 0.8rem;
-            margin-right: 0.8rem;
-        }
-        }
-    }
-    }
+}
 } /* Téléphone */
 
