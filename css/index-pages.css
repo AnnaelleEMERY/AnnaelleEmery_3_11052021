@@ -488,7 +488,6 @@ p {
     color: #9356dc;
     display: block;
     background: -webkit-linear-gradient(#9256dc, #ff79da);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -583,7 +582,7 @@ p {
     width: 77%;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 481px) {
+@media only screen and (min-width: 320px) and (min-width: 480px) {
   .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__description-column {
     width: 80%;
   }

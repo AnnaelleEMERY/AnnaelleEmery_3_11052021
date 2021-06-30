@@ -603,7 +603,6 @@ p {
     color: #9356dc;
     display: block;
     background: -webkit-linear-gradient(#9256dc, #ff79da);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
