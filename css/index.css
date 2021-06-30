@@ -96,6 +96,81 @@ ul {
   }
 }
 
+footer {
+  background-color: #353535;
+  width: 100%;
+  margin: 0;
+  border: 1px solid #353535;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+footer .footer__title {
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 1280px) {
+  footer .footer__title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  footer .footer__title {
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  footer .footer__title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+}
+footer .footer__ul {
+  padding: 0 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media only screen and (min-width: 1280px) {
+  footer .footer__ul {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  footer .footer__ul {
+    height: 100%;
+  }
+}
+footer .footer__ul__list {
+  width: max-content;
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 2000px) {
+  footer .footer__ul__list {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+}
+footer .footer__ul__list a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer__ul__list:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .footer__ul__list .fa-utensils {
+  margin-right: 1rem;
+}
+footer .footer__ul__list .fa-hands-helping {
+  font-size: 0.8rem;
+  margin-right: 0.8rem;
+}
+
 .button-primary {
   border: none;
   padding: 1rem 1.5rem 1rem 1.5rem;
@@ -104,7 +179,7 @@ ul {
 }
 @media only screen and (min-width: 3000px) {
   .button-primary {
-    padding: 1.5em 2rem 1.5rem 2rem;
+    padding: 1.3rem 1.8rem 1.3rem 1.8rem;
   }
 }
 .button-primary--gradient {
@@ -114,9 +189,14 @@ ul {
   font-size: 1.2rem;
   color: white;
 }
+@media only screen and (min-width: 1920px) {
+  .button-primary--text {
+    font-size: 1.4rem;
+  }
+}
 @media only screen and (min-width: 3000px) {
   .button-primary--text {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }
 .button-primary:hover {
@@ -244,9 +324,9 @@ p {
     margin: 0.5rem;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 1920px) {
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
   .header__title {
-    font-size: 3.3rem;
+    font-size: 3rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -297,6 +377,15 @@ p {
     margin-bottom: 3rem;
     margin-top: -1.5rem;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 1280px) {
+  .container-menu-nav__nav-three-buttons {
+    flex-direction: row;
+    align-items: center;
+    height: 12rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .container-menu-nav__nav-three-buttons__button-and-number {
     display: flex;
     flex-direction: row;
@@ -315,6 +404,14 @@ p {
     position: relative;
     z-index: 1;
   }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  .container-menu-nav__nav-three-buttons__button-and-number__number {
+    font-size: 1.2rem;
+    padding: 0.35rem 0.7rem;
+  }
+}
+@media only screen and (min-width: 320px) {
   .container-menu-nav__nav-three-buttons__button-and-number__button-nav {
     width: 85%;
     display: flex;
@@ -340,12 +437,13 @@ p {
 }
 @media only screen and (min-width: 320px) and (min-width: 1920px) {
   .container-menu-nav__nav-three-buttons__button-and-number__button-nav {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 320px) and (min-width: 3000px) {
   .container-menu-nav__nav-three-buttons__button-and-number__button-nav {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+    height: 5.5rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -420,6 +518,12 @@ p {
     left: 1.3rem;
   }
 }
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  .container-menus__two-menus-container__bloc-nouveau {
+    top: 3.5rem;
+    font-size: 1.5rem;
+  }
+}
 @media only screen and (min-width: 320px) {
   .container-menus__two-menus-container__bloc-nouveau--none {
     display: none;
@@ -462,14 +566,19 @@ p {
     height: 20rem;
   }
 }
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
+  .container-menus__two-menus-container__box-menu {
+    height: 26rem;
+  }
+}
 @media only screen and (min-width: 320px) and (min-width: 2000px) {
   .container-menus__two-menus-container__box-menu {
     height: 28rem;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 1920px) {
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
   .container-menus__two-menus-container__box-menu {
-    height: 27rem;
+    height: 35rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -494,6 +603,7 @@ p {
     color: #9356dc;
     display: block;
     background: -webkit-linear-gradient(#9256dc, #ff79da);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -508,8 +618,13 @@ p {
 }
 @media only screen and (min-width: 320px) and (min-width: 1920px) {
   .container-menus__two-menus-container__box-menu__description__colonne2 .fas {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-right: 2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  .container-menus__two-menus-container__box-menu__description__colonne2 .fas {
+    font-size: 2.2rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -527,81 +642,6 @@ p {
   .container-menus__two-menus-container__box-menu__description__texte {
     margin: 0;
     padding: 0;
-  }
-}
-@media only screen and (min-width: 320px) {
-  footer {
-    background-color: #353535;
-    margin: 0;
-    border: 1px solid #353535;
-    color: white;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
-  }
-  footer .footer__title {
-    padding-left: 1.5rem;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-  }
-}
-@media only screen and (min-width: 320px) and (min-width: 1920px) {
-  footer .footer__title {
-    font-size: 1.8rem;
-  }
-}
-@media only screen and (min-width: 320px) and (min-width: 3000px) {
-  footer .footer__title {
-    font-size: 2.2rem;
-  }
-}
-@media only screen and (min-width: 320px) {
-  footer .footer__ul {
-    padding: 0 0 0 1.5rem;
-    height: 7.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-}
-@media only screen and (min-width: 320px) and (min-width: 3000px) {
-  footer .footer__ul {
-    height: 100%;
-  }
-}
-@media only screen and (min-width: 320px) {
-  footer .footer__ul__list {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    list-style-type: none;
-  }
-}
-@media only screen and (min-width: 320px) and (min-width: 3000px) {
-  footer .footer__ul__list {
-    margin-bottom: 1rem;
-  }
-}
-@media only screen and (min-width: 320px) {
-  footer .footer__ul__list a {
-    color: white;
-    text-decoration: none;
-  }
-}
-@media only screen and (min-width: 320px) {
-  footer .footer__ul__list:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-}
-@media only screen and (min-width: 320px) {
-  footer .footer__ul__list .fa-utensils {
-    margin-right: 1rem;
-  }
-}
-@media only screen and (min-width: 320px) {
-  footer .footer__ul__list .fa-hands-helping {
-    font-size: 0.8rem;
-    margin-right: 0.8rem;
   }
 }
 /* Téléphone */
