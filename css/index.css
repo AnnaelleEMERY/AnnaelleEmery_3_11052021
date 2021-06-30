@@ -102,6 +102,11 @@ ul {
   border-radius: 60px;
   box-shadow: 0px 1px 20px #a8a8a8;
 }
+@media only screen and (min-width: 3000px) {
+  .button-primary {
+    padding: 1.5em 2rem 1.5rem 2rem;
+  }
+}
 .button-primary--gradient {
   background: linear-gradient(176deg, #ff79da 5%, #9256dc 100%);
 }
@@ -109,14 +114,9 @@ ul {
   font-size: 1.2rem;
   color: white;
 }
-@media only screen and (min-width: 1920px) {
-  .button-primary--text {
-    font-size: 1.4rem;
-  }
-}
 @media only screen and (min-width: 3000px) {
   .button-primary--text {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
 }
 .button-primary:hover {
@@ -244,9 +244,9 @@ p {
     margin: 0.5rem;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 3000px) {
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
   .header__title {
-    font-size: 3rem;
+    font-size: 3.3rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -494,7 +494,6 @@ p {
     color: #9356dc;
     display: block;
     background: -webkit-linear-gradient(#9256dc, #ff79da);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -509,13 +508,8 @@ p {
 }
 @media only screen and (min-width: 320px) and (min-width: 1920px) {
   .container-menus__two-menus-container__box-menu__description__colonne2 .fas {
-    font-size: 2rem;
-    margin-right: 2rem;
-  }
-}
-@media only screen and (min-width: 320px) and (min-width: 3000px) {
-  .container-menus__two-menus-container__box-menu__description__colonne2 .fas {
     font-size: 2.2rem;
+    margin-right: 2rem;
   }
 }
 @media only screen and (min-width: 320px) {

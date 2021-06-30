@@ -102,6 +102,11 @@ ul {
   border-radius: 60px;
   box-shadow: 0px 1px 20px #a8a8a8;
 }
+@media only screen and (min-width: 3000px) {
+  .button-primary {
+    padding: 1.5em 2rem 1.5rem 2rem;
+  }
+}
 .button-primary--gradient {
   background: linear-gradient(176deg, #ff79da 5%, #9256dc 100%);
 }
@@ -109,14 +114,9 @@ ul {
   font-size: 1.2rem;
   color: white;
 }
-@media only screen and (min-width: 1920px) {
-  .button-primary--text {
-    font-size: 1.4rem;
-  }
-}
 @media only screen and (min-width: 3000px) {
   .button-primary--text {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
 }
 .button-primary:hover {
@@ -195,12 +195,12 @@ ul {
 }
 @media only screen and (min-width: 1920px) {
   .h1__Menu {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 @media only screen and (min-width: 3000px) {
   .h1__Menu {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -216,9 +216,14 @@ ul {
     font-size: 1.5rem;
   }
 }
-@media only screen and (min-width: 3000px) {
+@media only screen and (min-width: 1920px) {
   .h2__thin-uppercase {
     font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .h2__thin-uppercase {
+    font-size: 2.4rem;
   }
 }
 
@@ -238,12 +243,12 @@ ul {
 }
 @media only screen and (min-width: 1920px) {
   .h3__menus {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 3000px) {
   .h3__menus {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -252,19 +257,14 @@ p {
   font-size: 1rem;
   margin: 0;
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 2000px) {
   p {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (min-width: 1920px) {
-  p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 @media only screen and (min-width: 3000px) {
   p {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -282,9 +282,14 @@ p {
     margin: 0.5rem;
   }
 }
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
+  header .header__title {
+    font-size: 3.3rem;
+  }
+}
 @media only screen and (min-width: 320px) and (min-width: 3000px) {
   header .header__title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -303,20 +308,35 @@ p {
     left: -35%;
   }
 }
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
+  header .home-link {
+    font-size: 2rem;
+  }
+}
 @media only screen and (min-width: 320px) and (min-width: 2000px) {
   header .home-link {
-    left: -40%;
+    left: -39%;
   }
 }
 @media only screen and (min-width: 320px) and (min-width: 3000px) {
   header .home-link {
-    left: -43%;
+    left: -42%;
   }
 }
 @media only screen and (min-width: 320px) {
   header .home-link .fa-arrow-left {
     font-size: 1.5rem;
     color: #353535;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
+  header .home-link {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  header .home-link {
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -388,13 +408,8 @@ p {
 }
 @media only screen and (min-width: 320px) and (min-width: 1920px) {
   .Menu__title-and-heart .fas {
-    font-size: 2rem;
-    margin-right: 2rem;
-  }
-}
-@media only screen and (min-width: 320px) and (min-width: 3000px) {
-  .Menu__title-and-heart .fas {
     font-size: 2.2rem;
+    margin-right: 2rem;
   }
 }
 @media only screen and (min-width: 320px) {
@@ -403,7 +418,6 @@ p {
     color: #9356dc;
     display: block;
     background: -webkit-linear-gradient(#9256dc, #ff79da);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -437,7 +451,7 @@ p {
     height: 20rem;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 2000px) {
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
   .Menu__boxes {
     height: 25rem;
   }
@@ -482,12 +496,7 @@ p {
     height: 6rem;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 2000px) {
-  .Menu__boxes__individual-boxes {
-    height: 7rem;
-  }
-}
-@media only screen and (min-width: 320px) and (min-width: 3000px) {
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
   .Menu__boxes__individual-boxes {
     height: 8rem;
   }
@@ -498,7 +507,7 @@ p {
     width: 77%;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 481px) {
+@media only screen and (min-width: 320px) and (min-width: 480px) {
   .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__description-column {
     width: 80%;
   }
@@ -531,7 +540,7 @@ p {
     font-size: 1.9rem;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 2000px) {
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
   .Menu__boxes__individual-boxes:hover .Menu__boxes__individual-boxes__select-button .fa-check-circle {
     font-size: 2.6rem;
   }
@@ -600,7 +609,6 @@ p {
     margin: 0;
     border: 1px solid #353535;
     color: white;
-    padding-top: 0.5rem;
     padding-bottom: 1rem;
   }
   footer .footer__title {
@@ -609,10 +617,18 @@ p {
     letter-spacing: 1px;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 1920px) {
+@media only screen and (min-width: 320px) and (min-width: 1280px) {
   footer .footer__title {
     font-size: 1.8rem;
+    text-align: center;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
+  footer .footer__title {
     margin-bottom: 3rem;
+    font-size: 2.2rem;
   }
 }
 @media only screen and (min-width: 320px) and (min-width: 3000px) {
@@ -624,31 +640,36 @@ p {
 @media only screen and (min-width: 320px) {
   footer .footer__ul {
     padding: 0 0 0 1.5rem;
-    height: 7.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
 }
-@media only screen and (min-width: 320px) and (min-width: 1920px) {
+@media only screen and (min-width: 320px) and (min-width: 1280px) {
   footer .footer__ul {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (min-width: 320px) and (min-width: 3000px) {
-  footer .footer__ul {
-    height: 100%;
+    flex-direction: row;
   }
 }
 @media only screen and (min-width: 320px) {
   footer .footer__ul__list {
     width: max-content;
     list-style-type: none;
+    margin-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 320px) and (min-width: 1920px) {
   footer .footer__ul__list {
     margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1920px) {
+  footer .footer__ul__list {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 3000px) {
+  footer .footer__ul__list {
+    font-size: 1.8rem;
   }
 }
 @media only screen and (min-width: 320px) {

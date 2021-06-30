@@ -59,9 +59,9 @@ header{
 .header__title{
         margin: 0.5rem;
 
-    @media #{$breakpoint-TV-max} {
-        font-size: 3rem;
-    }
+        @media #{$breakpoint-TV-min} {
+            font-size: 3.3rem;
+        }
 }
 
 .container-under-header{
